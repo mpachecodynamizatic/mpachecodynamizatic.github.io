@@ -1,3 +1,5 @@
 title: Marcelino Pacheco
 description: Consultor Dynamics 365 Business Central & Power BI
-theme: minima
+remote_theme: jekyll/minima
+plugins:
+  - jekyll-remote-theme
