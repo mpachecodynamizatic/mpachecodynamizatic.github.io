@@ -10,7 +10,6 @@ image:
 media_subpath: /assets/img/posts/powerbi-manufacturing/
 ---
 
-01-portada.png
 
 ## Introducción
 
