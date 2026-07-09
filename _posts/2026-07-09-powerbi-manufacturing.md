@@ -5,7 +5,7 @@ categories: [Business Central, Power BI, Manufacturing]
 tags: [Power BI, Business Central, Fabricación, Analítica, Datos]
 description: Descubre cómo el modelo semántico de Power BI para Manufacturing en Business Central estructura los datos para impulsar la toma de decisiones.
 image:
-  path: Pportada.png
+  path: 01-portada.png
   alt: Modelo semántico de Power BI en manufacturing
 media_subpath: /assets/img/posts/powerbi-manufacturing/
 ---
