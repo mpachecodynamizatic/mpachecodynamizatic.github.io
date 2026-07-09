@@ -1,93 +1,136 @@
 ---
-title: Modelo semántico de Power BI para Manufacturing en Business Central: clave para la analítica avanzada
+title: El modelo semántico de Power BI en Business Central para fabricación, la base de la analítica moderna
 date: 2026-07-10
-categories: [Business Central, Power BI, Manufacturing]
-tags: [Power BI, Business Central, Fabricación, Analítica, Datos]
-description: Descubre cómo el modelo semántico de Power BI para Manufacturing en Business Central estructura los datos para impulsar la toma de decisiones.
+categories: [Business Central, Power BI, Analítica]
+tags: [Power BI, Manufacturing, Business Central, BI, Datos]
+description: Descubre cómo el modelo semántico de la app de Power BI Manufacturing en B
 image:
   path: 01-portada.png
   alt: Modelo semántico de Power BI en manufacturing
 media_subpath: /assets/img/posts/powerbi-manufacturing/
 ---
 
+01-portada.png
+
 ## Introducción
 
-La analítica de fabricación en entornos industriales requiere algo más que dashboards atractivos: necesita una estructura sólida de datos. Aquí es donde entra en juego el modelo semántico de la aplicación Power BI Manufacturing en Dynamics 365 Business Central.
+La combinación de **Dynamics 365 Business Central y Power BI** está revolucionando la forma en la que las empresas industriales analizan su información. En el corazón de esta analítica se encuentra el **modelo semántico de la app de Manufacturing**, una estructura diseñada para organizar y optimizar los datos de producción.
 
-Puedes consultar la fuente oficial aquí:  
-[Ver documentación en GitHub](https://github.com/MicrosoftDocs/dynamics365smb-docs/blob/main/business-central/manufacturing-powerbi-app-semantic-model.md)
-
-## ¿Qué es el modelo semántico?
-
-El modelo semántico organiza los datos para facilitar el análisis en Power BI. En este caso, se basa en un **modelo en esquema de estrella (Star Schema)**, que separa claramente:
-
-- **Tablas de hechos (fact tables)** → almacenan datos transaccionales  
-- **Tablas de dimensiones (dimension tables)** → proporcionan contexto y atributos [1](https://learn.microsoft.com/es-es/dynamics365/business-central/manufacturing-powerbi-app-semantic-model)  
-
-Esta estructura es clave para obtener rendimiento, claridad y escalabilidad en los informes.
-
-## Tablas de hechos: el corazón del análisis
-
-Las tablas de hechos contienen eventos y movimientos del negocio que pueden agregarse (SUM, AVG, COUNT…).
-
-Entre las principales destacan:
-
-- Entradas de calendario  
-- Movimientos de capacidad  
-- Movimientos de producto  
-- Líneas de órdenes de producción  
-- Componentes de órdenes  
-- Rutas de producción  
-- Entradas de valor [1](https://learn.microsoft.com/es-es/dynamics365/business-central/manufacturing-powerbi-app-semantic-model)  
-
-👉 Estas tablas permiten responder preguntas como:
-- ¿Dónde está la capacidad infrautilizada?
-- ¿Qué órdenes consumen más recursos?
-- ¿Cuál es el coste real de producción?
-
-## Tablas de dimensiones: contexto para decidir
-
-Las dimensiones enriquecen los datos transaccionales proporcionando atributos como:
-
-- Producto (Item)
-- Ubicación (Location)
-- Centro de trabajo
-- Rutas de fabricación [1](https://learn.microsoft.com/es-es/dynamics365/business-central/manufacturing-powerbi-app-semantic-model)  
-
-Esto permite segmentar y analizar la información con mayor precisión.
-
-## Ejemplo práctico: análisis de producción
-
-Imagina que analizas una planta industrial:
-
-- Usas **Capacity Ledger Entries** para conocer el uso real de recursos
-- Combinas con dimensiones como Work Center
-- Visualizas cuellos de botella y desviaciones
-
-Resultado: decisiones más rápidas y basadas en datos reales.
-
-## Beneficios clave
-
-✅ Estructura clara y optimizada  
-✅ Fácil integración con Power BI  
-✅ Capacidad de análisis multidimensional  
-✅ Base sólida para KPIs industriales  
-
-## Tendencia: modelos abiertos y personalizables
-
-Microsoft ha apostado por abrir estos modelos, permitiendo a las empresas personalizarlos según sus necesidades específicas.
-
-Esto supone:
-- Ahorro de tiempo en desarrollo  
-- Mayor adopción de analítica avanzada  
-- Adaptación a procesos reales de negocio  
-
-## Conclusión
-
-El modelo semántico del Power BI Manufacturing App no es solo una estructura técnica: es la base que permite transformar datos de producción en decisiones estratégicas.
-
-Para responsables de cuentas, operaciones o IT, representa una oportunidad clara de impulsar proyectos de analítica con impacto real en eficiencia y costes.
+Este modelo no solo facilita el análisis, sino que garantiza una interpretación coherente de los KPIs y métricas en toda la organización.
 
 ---
 
-01-portada.png
+## 🧠 ¿Qué es el modelo semántico?
+
+El modelo semántico de la app Manufacturing en Power BI se organiza siguiendo un **esquema en estrella (Star Schema)**. 【1-6a9e4e】  
+
+Esto significa que:
+
+- Existen **tablas de hechos (fact tables)** con datos transaccionales.
+- Existen **tablas de dimensiones (dimension tables)** que aportan contexto.
+
+👉 Este enfoque es clave para:
+- Mejorar el rendimiento de los informes
+- Facilitar la comprensión del modelo
+- Escalar la analítica empresarial
+
+---
+
+## 📊 Tablas de hechos: el núcleo de la información
+
+Las tablas de hechos contienen los datos operativos del día a día de fabricación. 【1-6a9e4e】  
+
+Algunos ejemplos incluidos en el modelo:
+
+- Entradas de capacidad
+- Líneas de órdenes de producción
+- Movimientos de producto
+- Entradas de valor
+- Necesidades de capacidad de órdenes
+
+Estas tablas permiten cálculos como:
+- SUM (totales)
+- AVG (medias)
+- COUNT (conteos)
+
+---
+
+## 🧩 Tablas de dimensiones: el contexto del negocio
+
+Las dimensiones enriquecen los datos transaccionales con información clave. 【1-6a9e4e】  
+
+Ejemplos de dimensiones:
+
+- Producto (Item)
+- Ubicación
+- Rutas de fabricación (Routing)
+- Centros de trabajo y máquinas
+
+👉 Gracias a estas dimensiones, los informes pueden responder preguntas como:
+- ¿Qué centro de trabajo es más eficiente?
+- ¿Dónde se producen los cuellos de botella?
+- ¿Qué productos generan más coste?
+
+---
+
+## ⚙️ Ejemplo práctico del modelo
+
+Un caso típico:
+
+- **Tabla de hechos:** entradas de capacidad
+- **Dimensiones asociadas:** centro de trabajo + ruta + orden de producción
+
+Esto permite analizar:
+
+- Uso de capacidad por planta
+- Coste por operación
+- Rendimiento productivo
+
+---
+
+## 🚀 Beneficios para las organizaciones
+
+El modelo semántico aporta valor directo:
+
+✅ Visión única del dato  
+✅ Informes consistentes  
+✅ Mejores decisiones operativas  
+✅ Escalabilidad analítica  
+✅ Integración con Power BI  
+
+Además, la app de Manufacturing ayuda a:  
+- Optimizar la eficiencia productiva  
+- Detectar cuellos de botella  
+- Analizar tiempos y costes de producción 【2-debf3a】  
+
+---
+
+## 🔍 Tendencias: hacia la analítica inteligente
+
+Con las últimas versiones de Business Central:
+
+- Se añaden nuevos KPIs y métricas
+- Se optimizan modelos semánticos
+- Se mejora la capacidad de análisis en Power BI 【3-cd3014】  
+
+La evolución apunta hacia:
+
+👉 Modelos cada vez más inteligentes  
+👉 Mayor automatización (IA + Copilot)  
+👉 Analítica en tiempo real  
+
+---
+
+## 🧾 Conclusión
+
+El modelo semántico de Manufacturing en Power BI no es solo una estructura técnica:
+
+👉 Es la base para convertir datos en decisiones.
+
+Para perfiles como responsables de cuentas, IT o consultores de Business Central, entender este modelo es clave para:
+
+- Diseñar mejores soluciones
+- Aportar valor al cliente
+- Impulsar la transformación digital
+
+---
