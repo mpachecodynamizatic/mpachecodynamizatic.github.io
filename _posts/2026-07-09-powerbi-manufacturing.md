@@ -3,11 +3,11 @@ title: El modelo semántico de Power BI en Business Central para fabricación, l
 date: 2026-07-10
 categories: [Business Central, Power BI, Analítica]
 tags: [Power BI, Manufacturing, Business Central, BI, Datos]
-description: Descubre cómo el modelo semántico de la app de Power BI Manufacturing en B
-image:
-  path: 01-portada.png
-  alt: Modelo semántico de Power BI en manufacturing
-media_subpath: /assets/img/posts/powerbi-manufacturing/
+description: Descubre cómo el modelo semántico de la app de Power BI Manufacturing en Business Central estructura los datos para impulsar la toma de decisiones.
+header:
+  image: /assets/img/posts/powerbi-manufacturing/01-portada.png
+  alt: "Modelo semántico de Power BI en manufacturing"
+  teaser: /assets/img/posts/powerbi-manufacturing/01-portada.png
 ---
 
 
