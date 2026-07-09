@@ -9,9 +9,9 @@ minimal_mistakes_skin: "air"   # opciones: air, aqua, contrast, dark, dirt, neon
 # ==============================================
 title: "Marcelino Pacheco"
 title_separator: "|"
-subtitle: "Consultor Dynamics 365 Business Central & Power BI"
+subtitle: "Cacharreando un poco con BC"
 name: "Marcelino Pacheco"
-description: "Blog sobre Business Central, AL development y Power BI."
+description: "Blog sobre Business Central y otras cosas"
 url: "https://mpachecodynamizatic.github.io"
 baseurl: ""
 locale: "es-ES"
@@ -22,7 +22,7 @@ timezone: "Europe/Madrid"
 # ==============================================
 author:
   name: "Marcelino Pacheco"
-  bio: "Consultor certificado en Dynamics 365 Business Central y Power BI."
+  bio: "Consultor certificado en Dynamics 365 Business Central"
   location: "España"
   # avatar: "/assets/images/avatar.jpg"   # descomenta y añade tu foto
   links:
