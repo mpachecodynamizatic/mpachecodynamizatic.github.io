@@ -1,0 +1,16 @@
+La IA en el ERP ya no es una promesa: en Dynamics 365 Business Central, Copilot y los agentes empiezan a aportar valor directo en finanzas, ventas, análisis y operaciones.
+
+He preparado un contenido sobre **Business Central AI** con una visión práctica: qué es, qué capacidades incluye, requisitos de configuración, casos de uso y buenas prácticas para implantarlo con criterio.
+
+Algunos puntos especialmente interesantes:
+- Chat, resumen, autorrellenado y análisis asistido dentro del propio flujo de trabajo.
+- Automatización de cuentas a pagar y pedidos de venta mediante agentes.
+- Sugerencias para conciliación bancaria, líneas de venta, sustitución de artículos y texto de marketing.
+- Control administrativo, permisos y gobernanza desde Business Central.
+- Oportunidad clara para empresas, partners y consultores que quieran convertir la IA en productividad real.
+
+Si estás evaluando cómo llevar la IA a tu operativa sin sacar los datos del ERP, Business Central AI merece una revisión seria.
+
+¿Qué caso de uso ves con mayor impacto en tu organización: finanzas, ventas o análisis?
+
+#BusinessCentral #Dynamics365 #Copilot #IAEmpresarial #Automatizacion #ERP #Microsoft #Finanzas #Ventas #Partners
