@@ -1,0 +1,770 @@
+
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.28.0 by Michael Rose
+  Copyright 2013-2026 Michael Rose - mademistakes.com | @mmistakes
+  Copyright 2024-2026 iBug - ibugone.com | @iBug
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="es-ES" class="no-js">
+  <head>
+    
+<meta charset="utf-8">
+
+
+<!-- begin _includes/seo.html --><title>Modelo semántico de Manufacturing en Power BI para Business Central | Marcelino Pacheco</title>
+<meta name="description" content="Descubre cómo el modelo semántico de Manufacturing en Power BI para Business Central transforma los datos de producción en análisis estratégicos y decisiones inteligentes.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="Marcelino Pacheco">
+<meta property="og:title" content="Modelo semántico de Manufacturing en Power BI para Business Central">
+<meta property="og:url" content="http://localhost:4000/business%20central/power%20bi/manufacturing/2026/07/10/manufacturing-powerbi-app-semantic-model.html">
+
+
+  <meta property="og:description" content="Descubre cómo el modelo semántico de Manufacturing en Power BI para Business Central transforma los datos de producción en análisis estratégicos y decisiones inteligentes.">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/posts/manufacturing-powerbi-app-semantic-model/01-portada.png">
+  
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2026-07-10T00:00:00+02:00">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/business%20central/power%20bi/manufacturing/2026/07/10/manufacturing-powerbi-app-semantic-model.html">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Marcelino Pacheco Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    
+<nav class="skip-links" aria-label="Skip links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Saltar a navegación principal</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Saltar a contenido</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Saltar a pie</a></li>
+  </ul>
+</nav>
+
+    
+
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
+        
+        <a class="site-title" href="/">
+          Marcelino Pacheco
+          <span class="site-subtitle">Cacharreando un poco con BC</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/"
+                
+                
+              >Inicio</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/categories/"
+                
+                
+              >Categorías</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/tags/"
+                
+                
+              >Etiquetas</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/about/"
+                
+                
+              >Sobre mí</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Alternar menú</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+
+
+<div id="main" role="main">
+  
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url"></a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>Consultor certificado en Dynamics 365 Business Central</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Seguir</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-location-dot" aria-hidden="true"></i> <span itemprop="name" class="p-locality">España</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://www.linkedin.com/in/TU_USUARIO" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/mpachecodynamizatic" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Modelo semántico de Manufacturing en Power BI para Business Central">
+    <meta itemprop="description" content="Descubre cómo el modelo semántico de Manufacturing en Power BI para Business Central transforma los datos de producción en análisis estratégicos y decisiones inteligentes.">
+    <meta itemprop="datePublished" content="2026-07-10T00:00:00+02:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/business%20central/power%20bi/manufacturing/2026/07/10/manufacturing-powerbi-app-semantic-model.html" itemprop="url">Modelo semántico de Manufacturing en Power BI para Business Central
+</a>
+          </h1>
+          
+
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minuto(s) de lectura
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc" aria-label="Table of contents">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> En esta página</h4></header>
+              <ul class="toc__menu"><li><a href="#modelo-semántico-de-manufacturing-en-power-bi-para-business-central">Modelo semántico de Manufacturing en Power BI para Business Central</a><ul><li><a href="#introducción">Introducción</a></li><li><a href="#qué-es">Qué es</a></li><li><a href="#principales-características">Principales características</a><ul><li><a href="#tablas-de-hechos-principales">Tablas de hechos principales</a></li><li><a href="#tablas-de-dimensiones">Tablas de dimensiones</a></li></ul></li><li><a href="#beneficios-para-las-empresas">Beneficios para las empresas</a></li><li><a href="#beneficios-para-partners-y-consultores">Beneficios para partners y consultores</a></li><li><a href="#casos-de-uso">Casos de uso</a></li><li><a href="#requisitos-y-configuración">Requisitos y configuración</a></li><li><a href="#buenas-prácticas">Buenas prácticas</a></li><li><a href="#checklist-de-implantación">Checklist de implantación</a></li><li><a href="#resumen-de-funcionalidades">Resumen de funcionalidades</a></li><li><a href="#conclusiones">Conclusiones</a></li><li><a href="#referencias">Referencias</a></li></ul></li></ul>
+            </nav>
+          </aside>
+        
+        <p><img src="/assets/posts/manufacturing-powerbi-app-semantic-model/01-portada.png" alt="Portada" /></p>
+
+<h1 id="modelo-semántico-de-manufacturing-en-power-bi-para-business-central">Modelo semántico de Manufacturing en Power BI para Business Central</h1>
+
+<h2 id="introducción">Introducción</h2>
+
+<p>En el contexto actual de transformación digital, la industria manufacturera necesita herramientas que permitan convertir grandes volúmenes de datos en información útil y accionable. Dynamics 365 Business Central, combinado con Power BI, da respuesta a este reto mediante el modelo semántico de la aplicación de Manufacturing.</p>
+
+<p>Este modelo permite estructurar los datos productivos de forma eficiente, facilitando su análisis y proporcionando una base sólida para la toma de decisiones estratégicas.</p>
+
+<h2 id="qué-es">Qué es</h2>
+
+<p>El modelo semántico de la app de Manufacturing en Power BI es una representación analítica de los datos que se basa en un esquema de tipo estrella (Star Schema).</p>
+
+<p>Este modelo divide la información en dos componentes principales:</p>
+
+<ul>
+  <li>Tablas de hechos: contienen datos transaccionales relacionados con la producción.</li>
+  <li>Tablas de dimensiones: añaden contexto a los datos, permitiendo análisis más detallados.</li>
+</ul>
+
+<p>Gracias a esta estructura, se mejora el rendimiento del análisis y la claridad en la interpretación de datos.</p>
+
+<h2 id="principales-características">Principales características</h2>
+
+<ul>
+  <li>Modelo de datos basado en Star Schema</li>
+  <li>Separación clara entre datos transaccionales y dimensiones</li>
+  <li>Optimización para agregaciones como SUM, COUNT y AVG</li>
+  <li>Integración directa con Business Central</li>
+  <li>Preparado para análisis avanzados en Power BI</li>
+  <li>Escalable para grandes volúmenes de información</li>
+</ul>
+
+<h3 id="tablas-de-hechos-principales">Tablas de hechos principales</h3>
+
+<ul>
+  <li>Entradas del libro de capacidad</li>
+  <li>Líneas de órdenes de producción</li>
+  <li>Movimientos de inventario</li>
+  <li>Entradas de valor</li>
+  <li>Necesidades de capacidad</li>
+</ul>
+
+<h3 id="tablas-de-dimensiones">Tablas de dimensiones</h3>
+
+<ul>
+  <li>Producto</li>
+  <li>Ubicación</li>
+  <li>Centro de trabajo</li>
+  <li>Enrutamientos</li>
+  <li>Calendarios</li>
+</ul>
+
+<h2 id="beneficios-para-las-empresas">Beneficios para las empresas</h2>
+
+<p>Implementar este modelo semántico proporciona ventajas clave:</p>
+
+<ul>
+  <li>Mayor visibilidad de los procesos productivos</li>
+  <li>Mejora en la eficiencia operativa</li>
+  <li>Reducción de tiempos de análisis</li>
+  <li>Identificación de cuellos de botella</li>
+  <li>Toma de decisiones basada en datos fiables</li>
+</ul>
+
+<p>Además, facilita la alineación entre áreas operativas y estratégicas.</p>
+
+<h2 id="beneficios-para-partners-y-consultores">Beneficios para partners y consultores</h2>
+
+<p>Para partners tecnológicos y consultores, este modelo supone un importante acelerador:</p>
+
+<ul>
+  <li>Reducción del tiempo de desarrollo en proyectos BI</li>
+  <li>Base estándar reutilizable</li>
+  <li>Mejora del time-to-market</li>
+  <li>Incremento del valor añadido en proyectos</li>
+  <li>Posibilidad de ampliar con KPIs personalizados</li>
+</ul>
+
+<h2 id="casos-de-uso">Casos de uso</h2>
+
+<p>El modelo se puede aplicar en múltiples escenarios:</p>
+
+<ul>
+  <li>Análisis de eficiencia productiva</li>
+  <li>Seguimiento de órdenes de fabricación</li>
+  <li>Control de costes de producción</li>
+  <li>Evaluación de uso de recursos</li>
+  <li>Identificación de desviaciones operativas</li>
+</ul>
+
+<p>También es clave en la construcción de cuadros de mando ejecutivos.</p>
+
+<h2 id="requisitos-y-configuración">Requisitos y configuración</h2>
+
+<p>Para implementar el modelo se necesita:</p>
+
+<ul>
+  <li>Business Central en entorno online</li>
+  <li>Licencia de Power BI (Pro o Premium)</li>
+  <li>Instalación de la app de Manufacturing en Power BI</li>
+  <li>Configuración de un workspace en Power BI</li>
+</ul>
+
+<p>La solución incluye:</p>
+
+<ul>
+  <li>APIs de acceso a datos</li>
+  <li>Modelo semántico predefinido</li>
+  <li>Informes listos para usar</li>
+</ul>
+
+<h2 id="buenas-prácticas">Buenas prácticas</h2>
+
+<p>Para maximizar el rendimiento del modelo:</p>
+
+<ul>
+  <li>Mantener una estructura de datos limpia</li>
+  <li>Validar relaciones entre tablas</li>
+  <li>Definir métricas clave correctamente</li>
+  <li>Optimizar el uso de DAX</li>
+  <li>Limitar el volumen de datos innecesarios</li>
+  <li>Monitorizar el rendimiento del modelo</li>
+</ul>
+
+<h2 id="checklist-de-implantación">Checklist de implantación</h2>
+
+<p>✅ Activar entorno Business Central<br />
+✅ Configurar Power BI<br />
+✅ Instalar app de Manufacturing<br />
+✅ Validar modelo semántico<br />
+✅ Revisar calidad de datos<br />
+✅ Crear dashboards<br />
+✅ Formar a usuarios</p>
+
+<h2 id="resumen-de-funcionalidades">Resumen de funcionalidades</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Funcionalidad</th>
+      <th>Beneficio</th>
+      <th>Impacto</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Modelo estrella</td>
+      <td>Análisis estructurado</td>
+      <td>Alto</td>
+    </tr>
+    <tr>
+      <td>Tablas de hechos</td>
+      <td>Datos transaccionales precisos</td>
+      <td>Crítico</td>
+    </tr>
+    <tr>
+      <td>Tablas de dimensión</td>
+      <td>Contexto analítico</td>
+      <td>Alto</td>
+    </tr>
+    <tr>
+      <td>Integración con BC</td>
+      <td>Automatización de datos</td>
+      <td>Alto</td>
+    </tr>
+    <tr>
+      <td>Power BI</td>
+      <td>Visualización avanzada</td>
+      <td>Muy alto</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="conclusiones">Conclusiones</h2>
+
+<p>El modelo semántico de la app de Manufacturing en Power BI para Business Central representa un componente clave para cualquier organización que quiera evolucionar hacia un modelo de gestión basado en datos.</p>
+
+<p>Gracias a su arquitectura optimizada y su integración nativa, permite mejorar la eficiencia operativa, aumentar la visibilidad del negocio y tomar decisiones más rápidas y precisas.</p>
+
+<p>En un entorno cada vez más competitivo, este tipo de soluciones se convierte en un elemento diferencial para las empresas industriales.</p>
+
+<h2 id="referencias">Referencias</h2>
+
+<p>Fuente original:</p>
+
+<p>https://github.com/MicrosoftDocs/dynamics365smb-docs/blob/main/business-central/manufacturing-powerbi-app-semantic-model.md
+``</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+  
+    
+
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Etiquetas: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#analitica" class="page__taxonomy-item p-category" rel="tag">analitica</a><span class="sep">, </span>
+    
+      <a href="/tags/#bi" class="page__taxonomy-item p-category" rel="tag">bi</a><span class="sep">, </span>
+    
+      <a href="/tags/#business-central" class="page__taxonomy-item p-category" rel="tag">business central</a><span class="sep">, </span>
+    
+      <a href="/tags/#erp" class="page__taxonomy-item p-category" rel="tag">erp</a><span class="sep">, </span>
+    
+      <a href="/tags/#manufacturing" class="page__taxonomy-item p-category" rel="tag">manufacturing</a><span class="sep">, </span>
+    
+      <a href="/tags/#modelo-semantico" class="page__taxonomy-item p-category" rel="tag">modelo semantico</a><span class="sep">, </span>
+    
+      <a href="/tags/#power-bi" class="page__taxonomy-item p-category" rel="tag">power bi</a>
+    
+    </span>
+  </p>
+
+
+  
+
+  
+    
+
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categorías: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#business-central" class="page__taxonomy-item p-category" rel="tag">Business Central</a><span class="sep">, </span>
+    
+      <a href="/categories/#manufacturing" class="page__taxonomy-item p-category" rel="tag">Manufacturing</a><span class="sep">, </span>
+    
+      <a href="/categories/#power-bi" class="page__taxonomy-item p-category" rel="tag">Power BI</a>
+    
+    </span>
+  </p>
+
+
+  
+
+
+        
+
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Actualizado:</strong> <time class="dt-published" datetime="2026-07-10T00:00:00+02:00">July 10, 2026</time></p>
+
+
+      </footer>
+
+      
+<section class="page__share">
+  <h4 class="page__share-title">Compartir en</h4>
+
+  <a href="https://x.com/intent/tweet?text=Modelo+sem%C3%A1ntico+de+Manufacturing+en+Power+BI+para+Business+Central%20http%3A%2F%2Flocalhost%3A4000%2Fbusiness%2520central%2Fpower%2520bi%2Fmanufacturing%2F2026%2F07%2F10%2Fmanufacturing-powerbi-app-semantic-model.html" class="btn btn--x" aria-label="Share on X" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir en X">
+    <i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i><span> X</span>
+  </a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fbusiness%2520central%2Fpower%2520bi%2Fmanufacturing%2F2026%2F07%2F10%2Fmanufacturing-powerbi-app-semantic-model.html" class="btn btn--facebook" aria-label="Share on Facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir en Facebook">
+    <i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span>
+  </a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/business%20central/power%20bi/manufacturing/2026/07/10/manufacturing-powerbi-app-semantic-model.html" class="btn btn--linkedin" aria-label="Share on LinkedIn" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir en LinkedIn">
+    <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span>
+  </a>
+
+  <a href="https://bsky.app/intent/compose?text=Modelo+sem%C3%A1ntico+de+Manufacturing+en+Power+BI+para+Business+Central%20http%3A%2F%2Flocalhost%3A4000%2Fbusiness%2520central%2Fpower%2520bi%2Fmanufacturing%2F2026%2F07%2F10%2Fmanufacturing-powerbi-app-semantic-model.html" class="btn btn--bluesky" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir en Bluesky">
+    <i class="fab fa-fw fa-bluesky" aria-hidden="true"></i><span> Bluesky</span>
+  </a>
+</section>
+
+
+      
+
+  <nav class="pagination" aria-label="Post pagination">
+    
+      <a href="/dynamics%20365/business%20central/inventario/2026/07/10/inventory-how-transfer-between-locations.html" class="pagination--pager" title="Cómo transferir inventario entre ubicaciones en Business Central">Anterior</a>
+    
+    
+      <a href="/dynamics%20365%20business%20central/sostenibilidad/esg/2026/07/10/sustainability-certificates.html" class="pagination--pager" title="Sustainability Certificates en Dynamics 365 Business Central">Siguiente</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    
+
+<div class="page__related">
+  
+  <h2 class="page__related-title">Puede que también te interese</h2>
+  <div class="grid__wrapper">
+    
+      
+      
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/posts/sustainability-certificates/01-portada.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/dynamics%20365%20business%20central/sostenibilidad/esg/2026/07/10/sustainability-certificates.html" rel="permalink">Sustainability Certificates en Dynamics 365 Business Central
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          8 minuto(s) de lectura
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt p-summary" itemprop="description">Guía práctica para entender y comunicar cómo Dynamics 365 Business Central permite crear, clasificar y asignar certificados de sostenibilidad a proveedores y...</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/posts/inventory-how-transfer-between-locations/01-portada.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/dynamics%20365/business%20central/inventario/2026/07/10/inventory-how-transfer-between-locations.html" rel="permalink">Cómo transferir inventario entre ubicaciones en Business Central
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minuto(s) de lectura
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt p-summary" itemprop="description">Aprende a gestionar transferencias de inventario entre almacenes en Business Central mediante órdenes de transferencia y diarios de reclasificación.
+</p>
+  </article>
+</div>
+
+    
+  </div>
+</div>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Seguir:</strong></li>
+    
+
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-square-rss" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2026 <a href="http://localhost:4000">Marcelino Pacheco</a>. Funciona con <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

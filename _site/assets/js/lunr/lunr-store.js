@@ -5,17 +5,11 @@ var store = [{
         "url": "/dynamics%20365/business%20central/inventario/2026/07/10/inventory-how-transfer-between-locations.html",
         "teaser": "/assets/posts/inventory-how-transfer-between-locations/01-portada.png"
       },{
-        "title": "Power BI Manufacturing en Business Central: modelo semántico para optimizar la producción",
-        "excerpt":"La analítica de fabricación ya no consiste solo en consultar informes históricos. En las organizaciones que trabajan con Dynamics 365 Business Central, el valor real aparece cuando las operaciones de planta, los costes y la capacidad se convierten en una capa analítica coherente, reutilizable y comprensible para perfiles de negocio...","categories": ["Business Intelligence","Dynamics 365","Power BI"],
-        "tags": ["power bi","business central","manufacturing","modelo semántico","reporting","producción","business intelligence"],
-        "url": "/business%20intelligence/dynamics%20365/power%20bi/2026/07/10/powerbi-manufacturing.html",
-        "teaser": null
-      },{
-        "title": "Transferencias WIP entre subcontratistas en Business Central: control real del producto semiterminado",
-        "excerpt":"En los entornos de fabricación en los que intervienen varios terceros, el producto semiterminado rara vez permanece estático. Puede salir del almacén propio, pasar por distintos subcontratistas y volver a la empresa para continuar o finalizar su proceso productivo. Este movimiento físico plantea una cuestión clave: ¿cómo registrar el desplazamiento...","categories": ["Dynamics 365 Business Central","Fabricación","Subcontratación"],
-        "tags": ["business central","fabricación","subcontracting","wip","work in progress","transfer orders","supply chain","microsoft"],
-        "url": "/dynamics%20365%20business%20central/fabricaci%C3%B3n/subcontrataci%C3%B3n/2026/07/10/subcontract-wip-transfers.html",
-        "teaser": null
+        "title": "Modelo semántico de Manufacturing en Power BI para Business Central",
+        "excerpt":"Modelo semántico de Manufacturing en Power BI para Business Central Introducción En el contexto actual de transformación digital, la industria manufacturera necesita herramientas que permitan convertir grandes volúmenes de datos en información útil y accionable. Dynamics 365 Business Central, combinado con Power BI, da respuesta a este reto mediante el...","categories": ["Business Central","Power BI","Manufacturing"],
+        "tags": ["business central","power bi","manufacturing","modelo semantico","bi","analitica","erp"],
+        "url": "/business%20central/power%20bi/manufacturing/2026/07/10/manufacturing-powerbi-app-semantic-model.html",
+        "teaser": "/assets/posts/manufacturing-powerbi-app-semantic-model/01-portada.png"
       },{
         "title": "Sustainability Certificates en Dynamics 365 Business Central",
         "excerpt":"Cómo acreditar sostenibilidad en artículos y proveedores En muchas organizaciones, la sostenibilidad ya no se gestiona como un discurso corporativo aislado. Se ha convertido en una exigencia operativa, comercial y regulatoria. Clientes, partners, equipos de compras y responsables de cumplimiento piden evidencias verificables: qué proveedores cumplen determinados estándares, qué productos...","categories": ["Dynamics 365 Business Central","Sostenibilidad","ESG"],

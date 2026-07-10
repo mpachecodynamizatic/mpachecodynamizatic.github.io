@@ -1,0 +1,30 @@
+📊 ¿Tus datos de producción te ayudan a decidir… o solo a reportar?
+Muchas empresas industriales ya tienen toda la información en Business Central: producción, inventario, costes, capacidad…
+ Pero sin un modelo adecuado, los datos no generan valor real.
+🚀 Aquí es donde entra el modelo semántico de Manufacturing en Power BI.
+Este enfoque permite estructurar los datos en un modelo analítico optimizado, separando lo transaccional de lo analítico y facilitando una visión global del negocio.
+🔍 ¿Qué aporta?
+✔️ Modelo de datos estructurado (Star Schema)
+ ✔️ Integración nativa con Business Central
+ ✔️ Análisis de producción, costes y capacidad en un único modelo
+ ✔️ Mayor rendimiento en consultas y reporting
+ ✔️ Escalabilidad para nuevos análisis
+📈 ¿El resultado?
+✅ Más eficiencia en el análisis
+ ✅ Visibilidad completa de la operación
+ ✅ Control real sobre procesos productivos
+ ✅ Decisiones más rápidas y basadas en datos
+💡 Tener Power BI no es suficiente.
+ 👉 La clave está en el modelo de datos que hay detrás.
+Porque sin modelo, solo hay informes.
+ Con modelo, hay decisiones.
+¿Tu organización ya está preparada para dar este paso?
+#BusinessCentral
+ #PowerBI
+ #Manufacturing
+ #DataAnalytics
+ #BusinessIntelligence
+ #Industria40
+ #ERP
+ #DataDriven
+ #TransformacionDigital

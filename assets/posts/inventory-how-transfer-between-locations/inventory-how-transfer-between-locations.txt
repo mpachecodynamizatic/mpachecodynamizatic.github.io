@@ -1,0 +1,26 @@
+📦 ¿Tienes varios almacenes y pierdes el control del stock?
+
+En Dynamics 365 Business Central, transferir inventario entre ubicaciones no es solo mover productos… es garantizar precisión, trazabilidad y control en toda la cadena logística.
+
+En este artículo te explico cómo hacerlo correctamente utilizando:
+
+✅ Pedidos de transferencia (con trazabilidad completa)
+✅ Inventario en tránsito (visibilidad en tiempo real)
+✅ Diarios de reclasificación (movimientos rápidos)
+
+💡 Implementarlo bien puede marcar la diferencia entre:
+- Tener stock desalineado
+- O disponer de una visión 100% fiable en todo momento
+
+Si gestionas múltiples ubicaciones, este proceso es clave para escalar operaciones sin perder control.
+
+👉 Descubre cómo optimizar tus transferencias y evitar errores operativos
+
+#BusinessCentral  
+#Dynamics365  
+#ERP  
+#Logistica  
+#Inventario  
+#SupplyChain  
+#Digitalizacion  
+#TransformacionDigital  
