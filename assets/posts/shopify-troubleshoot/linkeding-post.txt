@@ -1,0 +1,25 @@
+¿Problemas con la sincronización entre Shopify y Business Central?
+
+Es más común de lo que parece… pero también más fácil de resolver de lo que muchos creen.
+
+En este nuevo artículo analizamos cómo diagnosticar errores en integraciones Shopify + Business Central utilizando herramientas clave como:
+
+✅ Ejecución en foreground  
+✅ Logs avanzados  
+✅ Análisis de Request/Response  
+✅ Identificación de registros omitidos  
+
+💡 El verdadero diferencial no está en evitar errores, sino en saber detectarlos y resolverlos rápido.
+
+Si trabajas en proyectos de eCommerce o integraciones ERP, este contenido te va a resultar especialmente útil.
+
+👉 Descubre cómo mejorar la estabilidad de tus integraciones
+
+#BusinessCentral  
+#Shopify  
+#Dynamics365  
+#eCommerce  
+#ERP  
+#Integraciones  
+#ConsultoriaIT  
+#Microsoft  
