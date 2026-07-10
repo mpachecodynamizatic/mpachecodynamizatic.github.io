@@ -1,145 +1,197 @@
 ---
-title: Cómo resolver errores de sincronización entre Shopify y Business Central
+title: Cómo resolver errores de sincronización entre Shopify y Business Central de forma eficiente
 date: 2026-07-10
 categories: [Dynamics 365, Business Central, eCommerce]
-tags: [shopify, business central, integraciones, troubleshooting, sincronizacion, ERP, microsoft]
-excerpt: Guia completa para identificar y resolver errores en la sincronización entre Shopify y Business Central con buenas prácticas y recomendaciones clave
+tags: [shopify, business central, sincronizacion, troubleshooting, ERP, integraciones, consultoria IT]
+excerpt: Aprende a detectar y resolver errores en la sincronizacion entre Shopify y Business Central con un enfoque profesional basado en buenas practicas de Microsoft
 header:
-  teaser: /assets/posts/shopify-troubleshoot/01-portada.png
+  teaser: /assets/posts/shopify-troubleshoot-business-central/01-portada.png
 ---
 
-![Portada](/assets/posts/shopify-troubleshoot/01-portada.png){: .align-center style="max-width: 700px;"}
+![Portada](/assets/posts/shopify-troubleshoot-business-central/01-portada.png){: .align-center style="max-width: 700px;"}
 
-# Cómo resolver errores de sincronización entre Shopify y Business Central
+# Cómo resolver errores de sincronización entre Shopify y Business Central de forma eficiente
 
 ## Introducción
 
-La integración entre Shopify y Dynamics 365 Business Central se ha convertido en un elemento crítico para empresas que operan en eCommerce. Sin embargo, como en cualquier integración, pueden aparecer incidencias que afectan a la sincronización de datos como pedidos, productos o clientes.
+La integración entre Shopify y Dynamics 365 Business Central es clave para cualquier organización que quiera operar con eficiencia en eCommerce. Sin embargo, la sincronización entre ambas plataformas no siempre funciona como se espera.
 
-En este artículo analizamos cómo identificar, diagnosticar y resolver estos errores de forma eficiente, basándonos en las mejores prácticas recomendadas por Microsoft.
+Errores en pedidos, productos o clientes pueden generar inconsistencias, retrasos operativos e incluso pérdida de ventas.
+
+En este artículo abordamos cómo detectar, diagnosticar y resolver problemas de sincronización de manera estructurada, siguiendo las mejores prácticas recomendadas por Microsoft.
+
+---
 
 ## Qué es
 
-La sincronización entre Shopify y Business Central es un proceso automatizado que permite mantener alineados los datos entre la plataforma de comercio electrónico y el ERP.
+El troubleshooting de Shopify en Business Central es el conjunto de herramientas y métodos que permite identificar incidencias en la integración, entender su causa raíz y corregirlas.
 
-Cuando este proceso falla, puede impactar directamente en:
+Este proceso se apoya principalmente en:
 
-- La gestión de pedidos
-- La actualización de inventario
-- La facturación
-- La experiencia del cliente
+- Ejecución de sincronización controlada
+- Logs de integración
+- Análisis de datos intercambiados
+- Gestión de errores y registros omitidos
 
-Por ello, disponer de un método claro de troubleshooting es clave.
+---
 
 ## Principales características
 
-Las herramientas de resolución de problemas en Business Central incluyen:
+Business Central ofrece múltiples capacidades para facilitar la resolución de problemas:
 
-- Ejecución de sincronización en primer plano
-- Sistema avanzado de logs
-- Registro de datos intercambiados
-- Gestión de políticas de retención de logs
-- Identificación de registros omitidos
+- 🔍 Ejecución en foreground (tiempo real)
+- 🧾 Sistema de logging configurable
+- 🔄 Captura de request y response
+- 📊 Revisión de logs detallados
+- 🧹 Políticas de retención de datos
+- ⚠️ Identificación de registros omitidos
 
-Estas capacidades permiten un diagnóstico preciso de incidencias.
+---
 
 ## Beneficios para las empresas
 
-- Reducción de interrupciones operativas
-- Diagnóstico rápido de errores
-- Mejora en la continuidad del negocio
-- Mayor fiabilidad en integraciones
+- Mejora la continuidad operativa
+- Reduce tiempos de resolución de incidencias
+- Aumenta la fiabilidad de los datos
+- Evita pérdidas de información crítica
+- Mejora la experiencia del cliente final
+
+---
 
 ## Beneficios para partners y consultores
 
-- Facilita la identificación de errores en proyectos
-- Reduce el tiempo de soporte
-- Mejora la calidad del servicio
-- Estandariza procedimientos de diagnóstico
+- Diagnóstico estructurado y repetible
+- Reducción del tiempo de soporte
+- Mejora la calidad de implantación
+- Capacidad de análisis técnico profundo
+- Estandarización de procedimientos
+
+---
 
 ## Casos de uso
 
-Algunos escenarios típicos incluyen:
+Escenarios más comunes en proyectos reales:
 
-- Pedidos que no se sincronizan
-- Productos que fallan en importación
-- Errores en exportación de datos
-- Problemas en integración de pagos o devoluciones
+- Pedidos que no se importan a Business Central
+- Productos que fallan durante la sincronización
+- Errores al exportar datos a Shopify
+- Problemas en devoluciones o reembolsos
+- Sincronizaciones incompletas o inconsistentes
+
+---
 
 ## Requisitos y configuración
 
-Para poder realizar troubleshooting correctamente:
+Para poder hacer troubleshooting correctamente es necesario:
 
 - Acceso a Shopify Shop Card
-- Configuración de logs habilitada
-- Permisos adecuados
-- Conectividad correcta con Shopify
+- Configuración activa del conector
+- Permisos adecuados en BC
+- Logging habilitado
+- Integración correctamente autenticada
+
+---
 
 ## Buenas prácticas
 
-### 1. Ejecutar sincronización en foreground
+### ✅ 1. Ejecutar la sincronización en primer plano
 
-Permite ver errores en tiempo real en lugar de procesos en background.
+Permite ver errores en tiempo real.
 
-### 2. Activar logs detallados
+📌 **Tip:**  
+Evita depender del Job Queue en fases de diagnóstico.
 
-Configurando el modo:
+---
 
-- Error Only
-- All (más detallado)
+### ✅ 2. Activar el logging correctamente
 
-⚠️ El modo completo puede impactar en rendimiento.
+Opciones disponibles:
 
-### 3. Revisar logs de integración
+- Error Only → mínimo impacto
+- All → máximo detalle
 
-Analizar:
+📌 **Nota importante:**  
+El modo "All" puede afectar al rendimiento si se mantiene activo continuamente.
 
-- Request
-- Response
-- Status Code
-- Mensajes de error
+---
 
-### 4. Gestión de logs
+### ✅ 3. Analizar logs de integración
+
+Revisar siempre:
+
+- Request enviado
+- Response recibido
+- Código de estado
+- Mensaje de error
+
+📌 **Tip de consultoría:**  
+El Request ID es clave cuando se escala una incidencia.
+
+---
+
+### ✅ 4. Revisar registros omitidos
+
+El sistema puede saltar registros inválidos sin detener la sincronización.
+
+📌 **Ejemplos típicos:**
+
+- Cliente inexistente
+- Producto bloqueado
+- Datos obligatorios vacíos
+
+---
+
+### ✅ 5. Gestionar los logs correctamente
 
 - Retención estándar: 1 mes
-- Eliminación de logs antiguos
-- Control de tamaño de base de datos
+- Eliminación manual de logs antiguos
+- Control del tamaño de base de datos
 
-### 5. Identificación de registros omitidos
+📌 **Nota técnica:**  
+Una mala gestión de logs puede impactar seriamente en rendimiento.
 
-El sistema puede omitir registros no válidos.
+---
 
 ## Checklist de implantación
 
 | Control | Estado recomendado |
-|--------|--------------------|
-| Logging activado | ✅ |
-| Sync en foreground probado | ✅ |
-| Revisión de logs periódica | ✅ |
-| Control de datos erróneos | ✅ |
+|--------|---------------------|
+| Sync probado en foreground | ✅ |
+| Logging configurado | ✅ |
+| Logs revisados periódicamente | ✅ |
+| Registros omitidos controlados | ✅ |
 | Limpieza de logs | ✅ |
+| Request/Response analizados | ✅ |
+
+---
 
 ## Resumen de funcionalidades
 
 | Funcionalidad | Beneficio | Impacto |
 |---------------|------------|----------|
-| Sync en foreground | Visualización inmediata de errores | Alto |
-| Logging avanzado | Diagnóstico detallado | Muy alto |
-| Logs con Request/Response | Análisis técnico profundo | Alto |
-| Políticas de retención | Control de datos | Medio |
-| Identificación de errores | Resolución rápida | Muy alto |
+| Sync en foreground | Diagnóstico inmediato | Alto |
+| Logging configurable | Captura de errores | Muy alto |
+| Request/Response | Diagnóstico técnico profundo | Alto |
+| Registros omitidos | Identificación de fallos de datos | Alto |
+| Retención de logs | Control de datos | Medio |
+
+---
 
 ## Conclusiones
 
-La resolución de problemas en la integración Shopify + Business Central no debe ser reactiva, sino proactiva.
+El troubleshooting en Shopify + Business Central no debe entenderse como una acción reactiva, sino como una práctica continua dentro del ciclo de vida de la integración.
 
-El uso correcto de las herramientas de logging y análisis permite:
+Una estrategia basada en:
 
-- Minimizar errores
-- Anticipar incidencias
-- Mejorar la calidad del dato
+- Visibilidad completa
+- Análisis estructurado
+- Buenas prácticas de logging
 
-Para consultores y responsables IT, dominar estas capacidades es clave en proyectos modernos de eCommerce.
+permite reducir drásticamente los errores, mejorar la calidad del dato y garantizar la estabilidad del sistema.
+
+💡 En entornos reales, la diferencia entre una integración “funcional” y una “excelente” está en la capacidad de diagnóstico.
+
+---
 
 ## Referencias
 
