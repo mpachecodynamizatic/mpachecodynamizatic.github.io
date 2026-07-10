@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-07-10T14:45:52+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marcelino Pacheco</title><subtitle>Blog sobre Business Central y otras cosas</subtitle><author><name>{&quot;bio&quot; =&gt; &quot;Consultor certificado en Dynamics 365 Business Central&quot;, &quot;location&quot; =&gt; &quot;España&quot;, &quot;links&quot; =&gt; [{&quot;label&quot; =&gt; &quot;LinkedIn&quot;, &quot;icon&quot; =&gt; &quot;fab fa-fw fa-linkedin&quot;, &quot;url&quot; =&gt; &quot;https://www.linkedin.com/in/TU_USUARIO&quot;}, {&quot;label&quot; =&gt; &quot;GitHub&quot;, &quot;icon&quot; =&gt; &quot;fab fa-fw fa-github&quot;, &quot;url&quot; =&gt; &quot;https://github.com/mpachecodynamizatic&quot;}]}</name></author><entry><title type="html">Sustainability Certificates en Dynamics 365 Business Central</title><link href="http://localhost:4000/dynamics%20365%20business%20central/sostenibilidad/esg/2026/07/10/sustainability-certificates.html" rel="alternate" type="text/html" title="Sustainability Certificates en Dynamics 365 Business Central" /><published>2026-07-10T00:00:00+02:00</published><updated>2026-07-10T00:00:00+02:00</updated><id>http://localhost:4000/dynamics%20365%20business%20central/sostenibilidad/esg/2026/07/10/sustainability-certificates</id><content type="html" xml:base="http://localhost:4000/dynamics%20365%20business%20central/sostenibilidad/esg/2026/07/10/sustainability-certificates.html"><![CDATA[<p><img src="/assets/posts/sustainability-certificates/01-portada.png" alt="Portada" class="align-center" style="max-width: 700px;" /></p>
+
+<h2 id="cómo-acreditar-sostenibilidad-en-artículos-y-proveedores">Cómo acreditar sostenibilidad en artículos y proveedores</h2>
+
+<p>En muchas organizaciones, la sostenibilidad ya no se gestiona como un discurso corporativo aislado. Se ha convertido en una exigencia operativa, comercial y regulatoria. Clientes, partners, equipos de compras y responsables de cumplimiento piden evidencias verificables: qué proveedores cumplen determinados estándares, qué productos incorporan criterios medioambientales y cómo se documenta esa información dentro de los procesos de negocio.</p>
+
+<p>Ahí es donde entra en juego la funcionalidad <strong>Sustainability Certificates</strong> de <strong>Dynamics 365 Business Central</strong>. Esta capacidad permite registrar y utilizar certificados de sostenibilidad para <strong>proveedores</strong> y <strong>artículos</strong>, aportando una estructura clara para clasificar, verificar y consultar información relacionada con estándares ESG.</p>
+
+<p>Más allá del dato, lo interesante es el enfoque: Business Central no trata el certificado como un comentario libre o una nota auxiliar, sino como una <strong>entidad gestionable</strong> con atributos definidos. En la práctica, esto ayuda a ordenar la información, mejorar la toma de decisiones y preparar a la empresa para nuevos requerimientos de transparencia en la cadena de suministro.</p>
+
+<h2 id="por-qué-esta-funcionalidad-importa-ahora">Por qué esta funcionalidad importa ahora</h2>
+
+<p>El mercado exige cada vez más pruebas de sostenibilidad, no solo declaraciones. Las empresas necesitan demostrar que trabajan con proveedores responsables, que compran o fabrican productos alineados con criterios ambientales y que pueden respaldar esas afirmaciones con datos estructurados.</p>
+
+<p>Los certificados de sostenibilidad cumplen precisamente esa función. Sirven como verificación independiente de que una empresa o un producto cumple ciertos criterios medioambientales, sociales o de gobernanza. En términos de negocio, eso se traduce en varios beneficios:</p>
+
+<ul>
+  <li><strong>Mayor confianza</strong> con clientes y socios.</li>
+  <li><strong>Mejor control de la cadena de suministro</strong>.</li>
+  <li><strong>Reducción de riesgos reputacionales y de cumplimiento</strong>.</li>
+  <li><strong>Trazabilidad más sólida</strong> para auditorías, concursos y reporting.</li>
+  <li><strong>Base documental</strong> para iniciativas de economía circular y producto sostenible.</li>
+</ul>
+
+<p>Desde el punto de vista operativo, tener esta información dentro del ERP evita dispersarla entre hojas de cálculo, correos o repositorios difíciles de mantener.</p>
+
+<h2 id="qué-permite-registrar-business-central">Qué permite registrar Business Central</h2>
+
+<p>La funcionalidad está pensada para que el certificado tenga una estructura clara y reutilizable. Al crear un certificado, Business Central permite definir elementos como:</p>
+
+<ul>
+  <li><strong>Tipo</strong>: si el certificado aplica a un proveedor o a un artículo.</li>
+  <li><strong>Número</strong>.</li>
+  <li><strong>Nombre</strong>.</li>
+  <li><strong>Área</strong> del certificado.</li>
+  <li><strong>Estándar</strong> del certificado.</li>
+  <li><strong>Emisor</strong>.</li>
+  <li><strong>Valor</strong>, cuando el certificado incluye una medida cuantificable.</li>
+</ul>
+
+<p>Este diseño es importante porque separa la clasificación del certificado en dos dimensiones que ayudan mucho en entornos reales:</p>
+
+<h3 id="1-área-del-certificado">1. Área del certificado</h3>
+
+<p>El área representa la temática o ámbito específico que cubre el certificado. Sirve para agrupar certificados similares según sus características. Por ejemplo, una organización podría utilizar áreas relacionadas con eficiencia energética, gestión de residuos, reciclabilidad, abastecimiento responsable o huella ambiental.</p>
+
+<h3 id="2-estándar-del-certificado">2. Estándar del certificado</h3>
+
+<p>El estándar identifica el marco o referencia concreta del certificado. Según la documentación, estos estándares deberían ofrecer criterios <strong>verificados</strong>, <strong>transparentes</strong> y <strong>medibles</strong>, alineados con marcos ESG internacionales. Esto refuerza la fiabilidad del dato y ayuda a distinguir entre una simple declaración interna y una acreditación con mayor robustez.</p>
+
+<h2 id="cómo-se-configura-una-secuencia-lógica-y-sencilla">Cómo se configura: una secuencia lógica y sencilla</h2>
+
+<p>La configuración sigue una lógica muy razonable:</p>
+
+<h3 id="paso-1-crear-áreas-de-certificado">Paso 1. Crear áreas de certificado</h3>
+
+<p>Primero se crean las áreas de certificado de sostenibilidad. Para ello, se accede a la página correspondiente de áreas, se da de alta un nuevo registro y se informan los campos de número y nombre.</p>
+
+<h3 id="paso-2-crear-estándares-de-certificado">Paso 2. Crear estándares de certificado</h3>
+
+<p>A continuación, se definen los estándares. De nuevo, el proceso consiste en abrir la página específica de estándares, crear un nuevo registro y completar su número y nombre.</p>
+
+<h3 id="paso-3-crear-el-certificado-de-sostenibilidad">Paso 3. Crear el certificado de sostenibilidad</h3>
+
+<p>Después se crea el certificado propiamente dicho. En este punto se indica si el certificado es para <strong>vendor</strong> o <strong>item</strong>, junto con su número, nombre, área, estándar, emisor y, si procede, un valor cuantificable.</p>
+
+<p>Un detalle especialmente útil es que Business Central también permite crear el certificado <strong>directamente desde la ficha del proveedor o del artículo</strong>. En ese caso, el tipo se completa automáticamente en función del origen, reduciendo errores y agilizando el mantenimiento.</p>
+
+<h2 id="cómo-se-utiliza-en-proveedores-y-artículos">Cómo se utiliza en proveedores y artículos</h2>
+
+<p>Una vez creado el certificado, el siguiente paso es vincularlo a los registros maestros correspondientes.</p>
+
+<h3 id="en-proveedores">En proveedores</h3>
+
+<p>El certificado se puede asignar desde la ficha del proveedor, dentro de la información general. Esto facilita identificar de forma rápida qué proveedores cuentan con una acreditación concreta y abre la puerta a procesos de selección, segmentación o filtrado más consistentes.</p>
+
+<h3 id="en-artículos">En artículos</h3>
+
+<p>En el caso de los artículos, la relación se gestiona desde la ficha del producto, dentro de la sección de sostenibilidad. Esto resulta especialmente valioso cuando el foco está en la trazabilidad del producto, la comunicación comercial o la preparación para requisitos normativos que exigen evidencias a nivel de artículo.</p>
+
+<h2 id="casos-de-uso-con-impacto-real">Casos de uso con impacto real</h2>
+
+<p>Aunque la funcionalidad parece sencilla, su valor aumenta mucho cuando se conecta con procesos empresariales habituales:</p>
+
+<h3 id="compras-responsables">Compras responsables</h3>
+
+<p>Los equipos de compras pueden priorizar proveedores con certificaciones reconocidas. Eso ayuda a profesionalizar la evaluación de terceros y a reforzar políticas internas de procurement sostenible.</p>
+
+<h3 id="catálogo-de-producto-con-atributos-esg">Catálogo de producto con atributos ESG</h3>
+
+<p>Si determinadas líneas de producto requieren demostrar reciclabilidad, eficiencia o cumplimiento de estándares concretos, el certificado pasa a ser un atributo gestionable dentro del ERP, no un dato externo difícil de mantener.</p>
+
+<h3 id="reporting-para-clientes-y-auditorías">Reporting para clientes y auditorías</h3>
+
+<p>Cuando un cliente solicita evidencias de sostenibilidad o un auditor pide respaldo documental, disponer del certificado estructurado en Business Central simplifica la respuesta y reduce tiempos de búsqueda.</p>
+
+<h3 id="gobierno-del-dato-esg">Gobierno del dato ESG</h3>
+
+<p>A medida que la sostenibilidad gana peso en compliance y reporting, es clave tener datos consistentes, normalizados y accesibles. Los certificados ayudan a reforzar ese gobierno del dato.</p>
+
+<h2 id="conexión-con-el-digital-product-passport-dpp">Conexión con el Digital Product Passport (DPP)</h2>
+
+<p>Uno de los puntos más relevantes de la documentación es la relación con los requisitos de <strong>Digital Product Passport</strong>. Business Central indica que el soporte para estos requisitos ayuda a las empresas a responder a futuras exigencias europeas de sostenibilidad, mediante la captura de datos ambientales clave directamente en el sistema.</p>
+
+<p>En este contexto, la documentación destaca tres campos de especial interés en la ficha del artículo:</p>
+
+<ul>
+  <li><strong>Recyclability Percentage</strong>: porcentaje de contenido reciclable del producto.</li>
+  <li><strong>Energy Efficiency Ratings</strong>: información estandarizada sobre eficiencia energética, como la categoría o etiqueta.</li>
+  <li><strong>End-of-Life Information</strong>: instrucciones de eliminación, reciclaje, devolución o notas sobre impacto ambiental.</li>
+</ul>
+
+<p>Esto es especialmente relevante para organizaciones que quieren anticiparse a escenarios donde la trazabilidad del producto y la transparencia ambiental dejarán de ser diferenciales para convertirse en requisitos prácticamente obligatorios.</p>
+
+<h2 id="importante-qr-y-dpp">Importante: QR y DPP</h2>
+
+<p>La documentación también aclara un matiz importante: <strong>Business Central no genera códigos QR incrustados para DPP</strong>. Sin embargo, sí proporciona datos que pueden exponerse a una herramienta externa desde la que trabajar la URL asociada al código QR.</p>
+
+<p>Es decir, el ERP puede actuar como fuente fiable del dato, mientras que la experiencia final del pasaporte digital puede completarse con soluciones complementarias.</p>
+
+<h2 id="encaje-dentro-de-la-estrategia-de-sostenibilidad-de-business-central">Encaje dentro de la estrategia de sostenibilidad de Business Central</h2>
+
+<p>Aunque este artículo se centra en los certificados, conviene ver la funcionalidad dentro del marco más amplio de sostenibilidad de Business Central. Microsoft documenta capacidades para gestionar emisiones de gases de efecto invernadero, intensidad de agua y residuos, así como la recopilación de datos mediante diarios de sostenibilidad, diarios generales y documentos de compra.</p>
+
+<p>Además, el enfoque incorpora categorías como <strong>Scope 1</strong>, <strong>Scope 2</strong> y <strong>Scope 3</strong>, junto con emisiones fuera de alcance y métricas de agua y residuos. Esto sitúa los certificados en un ecosistema más completo: no solo sirven para validar atributos de proveedores o artículos, sino también para formar parte de una arquitectura de información ESG más madura.</p>
+
+<h2 id="buenas-prácticas-para-implantar-sustainability-certificates">Buenas prácticas para implantar Sustainability Certificates</h2>
+
+<p>Más allá de la configuración técnica, hay varias recomendaciones prácticas que pueden marcar la diferencia:</p>
+
+<h3 id="1-definir-una-taxonomía-clara">1. Definir una taxonomía clara</h3>
+
+<p>Antes de cargar certificados, conviene consensuar qué áreas y estándares se van a utilizar. Una taxonomía desordenada provoca duplicidades y dificulta el reporting.</p>
+
+<h3 id="2-establecer-criterios-de-validación">2. Establecer criterios de validación</h3>
+
+<p>No todos los certificados tienen el mismo peso. Es recomendable definir una política interna sobre qué emisores o qué tipos de acreditación se consideran válidos para cada caso.</p>
+
+<h3 id="3-alinear-compras-sostenibilidad-y-datos-maestros">3. Alinear compras, sostenibilidad y datos maestros</h3>
+
+<p>La calidad del dato mejora mucho cuando compras, compliance, sostenibilidad y administración funcional trabajan con un criterio compartido.</p>
+
+<h3 id="4-pensar-en-reporting-desde-el-principio">4. Pensar en reporting desde el principio</h3>
+
+<p>Si el objetivo final es segmentar proveedores, documentar productos o responder a auditorías, conviene modelar la estructura del dato con ese uso final en mente.</p>
+
+<h3 id="5-preparar-la-evolución-hacia-dpp">5. Preparar la evolución hacia DPP</h3>
+
+<p>Aunque no todas las empresas estén ya obligadas a reportar con este nivel de detalle, capturar bien la información desde ahora reduce fricción futura.</p>
+
+<h2 id="conclusión">Conclusión</h2>
+
+<p><strong>Sustainability Certificates</strong> en Business Central es una funcionalidad pequeña en apariencia, pero estratégica en significado. Permite transformar la sostenibilidad en un dato estructurado dentro del ERP, vinculando certificados a proveedores y artículos con una lógica consistente, reutilizable y orientada a negocio.</p>
+
+<p>Para partners, consultores y responsables funcionales, esta característica abre una conversación muy actual: cómo pasar de la narrativa ESG a la <strong>gestión operativa de evidencias</strong>. Y para las empresas, representa un paso práctico hacia una cadena de suministro más transparente, un catálogo de producto más trazable y una mejor preparación ante los requisitos regulatorios que ya están llamando a la puerta.</p>
+
+<p>En definitiva, no se trata solo de registrar certificados. Se trata de convertir la sostenibilidad en información fiable, accesible y accionable.</p>
+
+<h2 id="meta-title-seo">Meta title SEO</h2>
+
+<p>Sustainability Certificates en Business Central: guía práctica para proveedores y artículos</p>
+
+<h2 id="meta-description-seo">Meta description SEO</h2>
+
+<p>Descubre cómo configurar y usar Sustainability Certificates en Dynamics 365 Business Central para proveedores y artículos, y cómo prepararte para requisitos como Digital Product Passport.</p>]]></content><author><name>{&quot;bio&quot; =&gt; &quot;Consultor certificado en Dynamics 365 Business Central&quot;, &quot;location&quot; =&gt; &quot;España&quot;, &quot;links&quot; =&gt; [{&quot;label&quot; =&gt; &quot;LinkedIn&quot;, &quot;icon&quot; =&gt; &quot;fab fa-fw fa-linkedin&quot;, &quot;url&quot; =&gt; &quot;https://www.linkedin.com/in/TU_USUARIO&quot;}, {&quot;label&quot; =&gt; &quot;GitHub&quot;, &quot;icon&quot; =&gt; &quot;fab fa-fw fa-github&quot;, &quot;url&quot; =&gt; &quot;https://github.com/mpachecodynamizatic&quot;}]}</name></author><category term="Dynamics 365 Business Central" /><category term="Sostenibilidad" /><category term="ESG" /><category term="Business Central" /><category term="sustainability-certificates" /><category term="ESG" /><category term="proveedores" /><category term="artículos" /><category term="Digital Product Passport" /><category term="sostenibilidad" /><summary type="html"><![CDATA[Guía práctica para entender y comunicar cómo Dynamics 365 Business Central permite crear, clasificar y asignar certificados de sostenibilidad a proveedores y artículos, y cómo conecta con los requisitos de Digital Product Passport.]]></summary></entry><entry><title type="html">Cómo transferir inventario entre ubicaciones en Business Central</title><link href="http://localhost:4000/dynamics%20365/business%20central/inventario/2026/07/10/inventory-how-transfer-between-locations.html" rel="alternate" type="text/html" title="Cómo transferir inventario entre ubicaciones en Business Central" /><published>2026-07-10T00:00:00+02:00</published><updated>2026-07-10T00:00:00+02:00</updated><id>http://localhost:4000/dynamics%20365/business%20central/inventario/2026/07/10/inventory-how-transfer-between-locations</id><content type="html" xml:base="http://localhost:4000/dynamics%20365/business%20central/inventario/2026/07/10/inventory-how-transfer-between-locations.html"><![CDATA[<p><img src="/assets/posts/inventory-how-transfer-between-locations/01-portada.png" alt="Portada" class="align-center" style="max-width: 700px;" /></p>
+<h1 id="cómo-transferir-inventario-entre-ubicaciones-en-business-central">Cómo transferir inventario entre ubicaciones en Business Central</h1>
+
+<h2 id="introducción">Introducción</h2>
+
+<p>En entornos empresariales con múltiples almacenes, delegaciones o centros logísticos, gestionar correctamente el movimiento de inventario es crítico para mantener la precisión del stock y optimizar la cadena de suministro.</p>
+
+<p>Microsoft Dynamics 365 Business Central proporciona herramientas específicas para transferir productos entre ubicaciones, permitiendo controlar todo el proceso de forma estructurada y trazable.</p>
+
+<h2 id="qué-es">Qué es</h2>
+
+<p>La funcionalidad de transferencia de inventario en Business Central permite mover productos entre ubicaciones mediante dos métodos principales:</p>
+
+<ul>
+  <li>Órdenes de transferencia</li>
+  <li>Diarios de reclasificación de productos</li>
+</ul>
+
+<p>Ambos enfoques permiten actualizar el stock, pero con diferentes niveles de control y complejidad.</p>
+
+<h2 id="principales-características">Principales características</h2>
+
+<ul>
+  <li>Gestión de transferencias entre múltiples ubicaciones</li>
+  <li>Control de cantidades en tránsito</li>
+  <li>Planificación con fechas de envío y recepción</li>
+  <li>Configuración de rutas de transferencia</li>
+  <li>Gestión de ubicaciones con distintos niveles de complejidad</li>
+  <li>Posibilidad de transferencias directas o controladas</li>
+</ul>
+
+<h2 id="beneficios-para-las-empresas">Beneficios para las empresas</h2>
+
+<ul>
+  <li>Mayor visibilidad del inventario en tiempo real</li>
+  <li>Reducción de errores en la gestión de stock</li>
+  <li>Mejora en la planificación logística</li>
+  <li>Control total del inventario en tránsito</li>
+  <li>Optimización de procesos entre almacenes</li>
+</ul>
+
+<h2 id="beneficios-para-partners-y-consultores">Beneficios para partners y consultores</h2>
+
+<ul>
+  <li>Escenarios amplios de implementación</li>
+  <li>Adaptabilidad a modelos logísticos complejos</li>
+  <li>Integración con procesos de planificación</li>
+  <li>Configuración flexible</li>
+</ul>
+
+<h2 id="casos-de-uso">Casos de uso</h2>
+
+<ul>
+  <li>Transferencia entre almacenes centrales y delegaciones</li>
+  <li>Reposición de stock en puntos de venta</li>
+  <li>Movimientos entre centros logísticos</li>
+  <li>Ajustes logísticos internos</li>
+  <li>Regularización de inventario sin ubicación</li>
+</ul>
+
+<h2 id="requisitos-y-configuración">Requisitos y configuración</h2>
+
+<p>Antes de utilizar esta funcionalidad es necesario:</p>
+
+<ul>
+  <li>Definir ubicaciones</li>
+  <li>Configurar rutas de transferencia</li>
+  <li>Establecer códigos de transporte (opcional)</li>
+  <li>Definir ubicación en tránsito</li>
+</ul>
+
+<h2 id="buenas-prácticas">Buenas prácticas</h2>
+
+<ul>
+  <li>Utilizar órdenes de transferencia cuando se requiera trazabilidad</li>
+  <li>Usar diarios de reclasificación para movimientos simples</li>
+  <li>Configurar correctamente rutas logísticas</li>
+  <li>Mantener consistencia en códigos de ubicaciones</li>
+  <li>Monitorizar inventario en tránsito</li>
+</ul>
+
+<h2 id="checklist-de-implantación">Checklist de implantación</h2>
+
+<p>✅ Ubicaciones creadas<br />
+✅ Rutas de transferencia configuradas<br />
+✅ Ubicación de tránsito definida<br />
+✅ Usuarios formados<br />
+✅ Procedimientos documentados</p>
+
+<h2 id="resumen-de-funcionalidades">Resumen de funcionalidades</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Funcionalidad</th>
+      <th>Beneficio</th>
+      <th>Impacto</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Órdenes de transferencia</td>
+      <td>Control completo del proceso</td>
+      <td>Alto</td>
+    </tr>
+    <tr>
+      <td>Inventario en tránsito</td>
+      <td>Visibilidad logística</td>
+      <td>Alto</td>
+    </tr>
+    <tr>
+      <td>Diarios de reclasificación</td>
+      <td>Movimientos rápidos</td>
+      <td>Medio</td>
+    </tr>
+    <tr>
+      <td>Rutas configurables</td>
+      <td>Planificación eficiente</td>
+      <td>Alto</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="conclusiones">Conclusiones</h2>
+
+<p>La gestión de transferencias en Business Central es una funcionalidad clave para empresas con operaciones distribuidas. Permite mantener la precisión del inventario, mejorar la eficiencia logística y garantizar la trazabilidad de los movimientos.</p>
+
+<p>Implementar correctamente estas capacidades aporta ventajas competitivas significativas en entornos cada vez más exigentes.</p>
+
+<h2 id="referencias">Referencias</h2>
+
+<p>Fuente original:</p>
+
+<p>https://github.com/MicrosoftDocs/dynamics365smb-docs/blob/main/business-central/inventory-how-transfer-between-locations.md</p>]]></content><author><name>{&quot;bio&quot; =&gt; &quot;Consultor certificado en Dynamics 365 Business Central&quot;, &quot;location&quot; =&gt; &quot;España&quot;, &quot;links&quot; =&gt; [{&quot;label&quot; =&gt; &quot;LinkedIn&quot;, &quot;icon&quot; =&gt; &quot;fab fa-fw fa-linkedin&quot;, &quot;url&quot; =&gt; &quot;https://www.linkedin.com/in/TU_USUARIO&quot;}, {&quot;label&quot; =&gt; &quot;GitHub&quot;, &quot;icon&quot; =&gt; &quot;fab fa-fw fa-github&quot;, &quot;url&quot; =&gt; &quot;https://github.com/mpachecodynamizatic&quot;}]}</name></author><category term="Dynamics 365" /><category term="Business Central" /><category term="Inventario" /><category term="business central" /><category term="inventario" /><category term="logística" /><category term="almacenes" /><category term="supply chain" /><summary type="html"><![CDATA[Aprende a gestionar transferencias de inventario entre almacenes en Business Central mediante órdenes de transferencia y diarios de reclasificación.]]></summary></entry><entry><title type="html">Power BI Manufacturing en Business Central: modelo semántico para optimizar la producción</title><link href="http://localhost:4000/business%20intelligence/dynamics%20365/power%20bi/2026/07/10/powerbi-manufacturing.html" rel="alternate" type="text/html" title="Power BI Manufacturing en Business Central: modelo semántico para optimizar la producción" /><published>2026-07-10T00:00:00+02:00</published><updated>2026-07-10T00:00:00+02:00</updated><id>http://localhost:4000/business%20intelligence/dynamics%20365/power%20bi/2026/07/10/powerbi-manufacturing</id><content type="html" xml:base="http://localhost:4000/business%20intelligence/dynamics%20365/power%20bi/2026/07/10/powerbi-manufacturing.html"><![CDATA[<p>La analítica de fabricación ya no consiste solo en consultar informes históricos. En las organizaciones que trabajan con Dynamics 365 Business Central, el valor real aparece cuando las operaciones de planta, los costes y la capacidad se convierten en una capa analítica coherente, reutilizable y comprensible para perfiles de negocio y de operaciones. Ahí es donde entra en juego el modelo semántico de Power BI Manufacturing.</p>
+
+<p>La documentación de Microsoft para la app de Manufacturing describe un <strong>modelo en estrella</strong> que separa claramente hechos y dimensiones. Ese detalle, que puede parecer técnico, tiene un impacto directo en la calidad del análisis: facilita la agregación, mejora la navegación por filtros y ayuda a construir una única capa de verdad para cuadros de mando, informes departamentales y visualizaciones ejecutivas.</p>
+
+<p>Además, la app de Power BI para fabricación no se plantea como una simple colección de gráficos. Microsoft la presenta como una solución orientada a distintos perfiles: dirección, mandos intermedios y supervisión operativa. El resultado es una base muy útil para compañías industriales que quieren evolucionar desde el reporting descriptivo hacia un análisis operacional más accionable.</p>
+
+<h2 id="qué-es">Qué es</h2>
+
+<p>El modelo semántico de Power BI Manufacturing para Business Central es la capa analítica que organiza la información de fabricación en una estructura preparada para Power BI. Según la documentación oficial, el modelo se construye con un <strong>esquema de estrella</strong>, una aproximación conocida por simplificar el análisis y separar dos grandes bloques de información:</p>
+
+<ul>
+  <li><strong>Tablas de hechos</strong>, donde viven los datos transaccionales.</li>
+  <li><strong>Tablas de dimensiones</strong>, que aportan contexto para segmentar, agrupar y analizar.</li>
+</ul>
+
+<p>En este caso, Microsoft destaca como hechos varias entidades clave de fabricación: entradas de calendario, movimientos de capacidad, movimientos de producto, necesidad de capacidad de órdenes de producción, componentes, líneas de ruta, líneas de pedido de producción y entradas de valor. En paralelo, el modelo añade dimensiones como producto, categoría de producto, ubicación, centro de máquina, órdenes de producción, routing, centro de trabajo y grupo de centro de trabajo.</p>
+
+<p>Traducido al lenguaje de negocio: el modelo convierte trazas operativas dispersas en una gramática analítica común. Eso permite responder con más claridad a preguntas como qué centros consumen más capacidad, dónde se concentran los cuellos de botella, qué productos acumulan más coste o cómo evoluciona la carga de producción.</p>
+
+<h2 id="principales-características">Principales características</h2>
+
+<h3 id="1-estructura-analítica-basada-en-estrella">1) Estructura analítica basada en estrella</h3>
+<p>La primera gran característica es su organización en un <strong>star schema</strong>. Esta arquitectura favorece modelos más entendibles, filtros más lógicos y una lectura de indicadores más consistente. En entornos industriales, donde conviven capacidad, producción, rutas, ubicaciones y costes, esta claridad es especialmente valiosa.</p>
+
+<h3 id="2-hechos-orientados-a-operaciones-reales-de-fabricación">2) Hechos orientados a operaciones reales de fabricación</h3>
+<p>Las tablas de hechos cubren los principales eventos transaccionales del ciclo productivo. Entre los ejemplos documentados por Microsoft aparecen:</p>
+
+<ul>
+  <li>Entradas de calendario.</li>
+  <li>Entradas del libro de contabilidad de capacidad.</li>
+  <li>Movimientos de producto.</li>
+  <li>Necesidades de capacidad de órdenes de producción.</li>
+  <li>Componentes de órdenes de producción.</li>
+  <li>Líneas de ruta de órdenes de producción.</li>
+  <li>Líneas de pedido de producción.</li>
+  <li>Entradas de valor.</li>
+</ul>
+
+<p>Esto permite analizar productividad, consumo, utilización, secuencias operativas y costes desde una misma base analítica.</p>
+
+<h3 id="3-dimensiones-con-contexto-de-negocio">3) Dimensiones con contexto de negocio</h3>
+<p>Las dimensiones enriquecen el análisis con atributos como artículo, categoría, ubicación, centro de máquina, orden de producción, routing o centro de trabajo. El beneficio práctico es claro: no se trata solo de sumar movimientos, sino de entender <strong>dónde</strong>, <strong>sobre qué producto</strong>, <strong>en qué ruta</strong>, <strong>en qué centro</strong> y <strong>en qué periodo</strong> suceden esos movimientos.</p>
+
+<h3 id="4-integración-con-la-app-estándar-de-power-bi">4) Integración con la app estándar de Power BI</h3>
+<p>La documentación de instalación de Microsoft indica que las apps de Power BI para Business Central combinan un conector AL, modelos semánticos, informes y páginas embebidas en Business Central. Es decir, no estamos ante un activo aislado, sino ante una solución lista para conectarse al entorno funcional de la aplicación.</p>
+
+<h3 id="5-preparado-para-distintos-perfiles-de-usuario">5) Preparado para distintos perfiles de usuario</h3>
+<p>La descripción general de la app de Manufacturing añade otro matiz importante: los informes están planteados para liderazgo, gestión y supervisión operativa. Entre los escenarios citados figuran el análisis de utilización actual e histórica, la carga de centros de trabajo, el desglose de órdenes terminadas, tiempos medios de producción y horas asignadas.</p>
+
+<h2 id="beneficios-para-las-empresas">Beneficios para las empresas</h2>
+
+<h3 id="más-visibilidad-sobre-la-planta">Más visibilidad sobre la planta</h3>
+<p>Cuando producción, capacidad y costes pasan a una capa semántica bien estructurada, la visibilidad mejora de forma notable. Los equipos pueden consultar dónde se concentra la carga, si existen desviaciones recurrentes o qué áreas acumulan más presión productiva.</p>
+
+<h3 id="decisiones-más-rápidas-y-mejor-fundamentadas">Decisiones más rápidas y mejor fundamentadas</h3>
+<p>Un modelo estándar reduce el tiempo que se pierde reinterpretando datos o discutiendo definiciones. Si la lógica analítica está ya organizada, la conversación cambia: deja de centrarse en “qué significa el dato” y pasa a centrarse en “qué decisión conviene tomar”.</p>
+
+<h3 id="mejor-lectura-de-capacidad-y-cuellos-de-botella">Mejor lectura de capacidad y cuellos de botella</h3>
+<p>La propia descripción de la app destaca análisis como Current Utilization, Historical Utilization o Work Center Load. Este enfoque ayuda a identificar saturaciones, infrautilización o desequilibrios entre centros de trabajo con mayor rapidez.</p>
+
+<h3 id="control-más-completo-de-costes-industriales">Control más completo de costes industriales</h3>
+<p>La existencia de entradas de valor y datos de capacidad dentro del modelo aporta una base sólida para relacionar esfuerzo productivo y coste. Para muchas empresas, este punto es decisivo: no basta con producir, hay que producir con rentabilidad y con información trazable.</p>
+
+<h3 id="base-común-para-escalabilidad-analítica">Base común para escalabilidad analítica</h3>
+<p>Adoptar un modelo semántico estándar también ayuda a crecer. Es más fácil extender informes, crear dashboards adaptados por rol o desarrollar analítica adicional cuando la estructura raíz ya está ordenada.</p>
+
+<h2 id="beneficios-para-partners-y-consultores">Beneficios para partners y consultores</h2>
+
+<p>Para partners, integradores y consultores de Business Central, este modelo reduce el trabajo de partir de cero. En lugar de diseñar todo el vocabulario analítico desde una hoja en blanco, pueden apoyarse en una estructura documentada por Microsoft.</p>
+
+<p>Eso genera varias ventajas:</p>
+
+<ul>
+  <li><strong>Aceleración del arranque del proyecto</strong>: hay una base funcional y documental clara.</li>
+  <li><strong>Menor riesgo de inconsistencias</strong>: las entidades principales ya están alineadas con Business Central.</li>
+  <li><strong>Más tiempo para aportar valor</strong>: el esfuerzo puede desplazarse desde el modelado básico hacia la adaptación al negocio, el gobierno del dato y la adopción por parte del usuario.</li>
+  <li><strong>Mayor capacidad de personalización controlada</strong>: Microsoft recomienda gobernar los workspaces y trabajar con copias o versiones personalizadas de informes para no perder cambios al actualizar plantillas.</li>
+</ul>
+
+<p>En proyectos donde el cliente necesita resultados rápidos, esta combinación entre estándar y extensión controlada puede marcar la diferencia.</p>
+
+<h2 id="casos-de-uso">Casos de uso</h2>
+
+<p>A partir de la documentación consultada, hay varios escenarios especialmente claros:</p>
+
+<ol>
+  <li>
+    <p><strong>Seguimiento de la utilización actual e histórica</strong>
+Ideal para detectar saturación en recursos, diferencias entre centros y tendencias operativas.</p>
+  </li>
+  <li>
+    <p><strong>Análisis de carga por centro de trabajo</strong>
+Útil para revisar equilibrio de recursos y valorar redistribuciones de carga o ajustes de planificación.</p>
+  </li>
+  <li>
+    <p><strong>Evaluación de órdenes de producción terminadas</strong>
+Permite estudiar tiempos medios, breakdowns y comportamiento de órdenes cerradas para detectar oportunidades de mejora.</p>
+  </li>
+  <li>
+    <p><strong>Control de horas asignadas</strong>
+Relevante para identificar picos inesperados de dedicación, revisar cargas de recursos y dimensionar mejor la operación.</p>
+  </li>
+  <li>
+    <p><strong>Análisis de subcontratación</strong>
+La app incorpora costes subcontratados y centros subcontratados por defecto, y añade un filtro de Subcontracting para incluir, excluir o aislar esos insights en los informes.</p>
+  </li>
+</ol>
+
+<h2 id="requisitos-y-configuración">Requisitos y configuración</h2>
+
+<p>La documentación de Microsoft indica varios requisitos explícitos para instalar las apps de Power BI de Business Central:</p>
+
+<ul>
+  <li>Un entorno de <strong>Business Central online</strong>.</li>
+  <li>Permisos y capacidad en <strong>Power BI</strong> para instalar apps de plantilla desde Marketplace y usar workspaces compartidos.</li>
+  <li>Licencias <strong>Power BI Pro</strong> para quien instala la app, quien refresca datos y quienes consumen informes; alternativamente, el uso de capacidad Premium/Fabric.</li>
+</ul>
+
+<p>Microsoft también aclara que cada app funcional se compone de dos piezas:</p>
+
+<ul>
+  <li>Una app conectora (AL), preinstalada en Business Central.</li>
+  <li>Una template app de Power BI que contiene el modelo semántico y los informes.</li>
+</ul>
+
+<p>En la configuración posterior, la guía asistida permite definir aspectos como el tipo de calendario, el desfase UTC, el rango de fechas, los días laborables y el mapeo de informes embebidos. Además, cada modelo semántico necesita parámetros de <strong>Environment</strong> y <strong>Company</strong> en Power BI, y Microsoft señala que el parámetro de empresa distingue mayúsculas y minúsculas.</p>
+
+<p>Otro punto relevante es el refresco. Los informes dependen de modelos semánticos que consumen APIs de Business Central, de modo que conviene revisar la política de refresh manual o programado. También se recomienda ejecutar periódicamente la cola de trabajo que actualiza dimension set entries para que dichas dimensiones aparezcan correctamente en las apps.</p>
+
+<h2 id="buenas-prácticas">Buenas prácticas</h2>
+
+<p>Además de lo que documenta Microsoft, hay una serie de recomendaciones prácticas que ayudan a sacar más partido a esta base:</p>
+
+<ul>
+  <li><strong>Mantener el modelo estándar como referencia principal</strong> y personalizar con criterio.</li>
+  <li><strong>Separar workspace de plantilla y workspace de explotación</strong> para conservar personalizaciones con más seguridad.</li>
+  <li><strong>Definir KPIs muy claros por rol</strong>: dirección, responsable de planta, responsable de producción y supervisión.</li>
+  <li><strong>Revisar la granularidad de fechas y filtros</strong> antes de extender informes.</li>
+  <li><strong>Acordar una gobernanza del dato</strong> para evitar que cada área redefina métricas a su manera.</li>
+  <li><strong>Probar el impacto del filtro de subcontratación</strong> cuando el modelo de trabajo industrial mezcla recursos internos y externos.</li>
+</ul>
+
+<h2 id="checklist-de-implantación">Checklist de implantación</h2>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Confirmar que la empresa trabaja con <strong>Business Central online</strong>.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Validar licencias <strong>Power BI Pro</strong> o capacidad Premium/Fabric.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Instalar la template app de Manufacturing en el workspace correcto.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Configurar parámetros de <strong>Environment</strong> y <strong>Company</strong>.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Revisar calendario, UTC offset, rango de fechas y días laborables.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Mapear informes embebidos en Business Central si se van a utilizar.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Definir estrategia de refresh de datos.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Revisar permisos de lectura para tablas implicadas.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Acordar criterios de gobierno del workspace y de las versiones personalizadas.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Priorizar un primer cuadro de mando por rol y un set de KPIs de arranque.</li>
+</ul>
+
+<h2 id="resumen-de-funcionalidades">Resumen de funcionalidades</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Funcionalidad</th>
+      <th>Beneficio</th>
+      <th>Impacto</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Esquema en estrella</td>
+      <td>Simplifica el análisis y ordena la lógica del modelo</td>
+      <td>Alto</td>
+    </tr>
+    <tr>
+      <td>Tablas de hechos de fabricación</td>
+      <td>Reúnen operaciones críticas de producción, capacidad y valor</td>
+      <td>Alto</td>
+    </tr>
+    <tr>
+      <td>Tablas de dimensión</td>
+      <td>Añaden contexto para segmentar y navegar por el dato</td>
+      <td>Alto</td>
+    </tr>
+    <tr>
+      <td>Informes orientados por rol</td>
+      <td>Facilitan el consumo por dirección, gestión y supervisión</td>
+      <td>Alto</td>
+    </tr>
+    <tr>
+      <td>Integración con Business Central y Power BI</td>
+      <td>Acelera el despliegue y la adopción</td>
+      <td>Muy alto</td>
+    </tr>
+    <tr>
+      <td>Configuración asistida</td>
+      <td>Ayuda a ajustar calendario, fechas y embedding</td>
+      <td>Medio</td>
+    </tr>
+    <tr>
+      <td>Filtro de subcontratación</td>
+      <td>Permite aislar o incluir costes y centros subcontratados</td>
+      <td>Medio-Alto</td>
+    </tr>
+    <tr>
+      <td>Gobierno por workspace</td>
+      <td>Reduce el riesgo de perder personalizaciones</td>
+      <td>Alto</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="conclusiones">Conclusiones</h2>
+
+<p>El modelo semántico de Power BI Manufacturing en Business Central destaca por algo muy importante: no intenta resolver la analítica industrial desde la improvisación. Microsoft aporta una base estructurada, documentada y conectada con casos de uso reales de producción.</p>
+
+<p>Para una empresa industrial, eso significa arrancar con una plataforma analítica más ordenada. Para un partner o consultor, significa menos tiempo dedicado a construir cimientos y más tiempo invertido en diseñar cuadros de mando útiles, gobernados y alineados con la operativa del cliente.</p>
+
+<p>La clave no está solo en instalar la app. La verdadera diferencia aparece cuando la organización convierte este modelo en su capa de referencia para hablar de capacidad, costes, utilización, rutas y órdenes de producción con el mismo lenguaje. Cuando eso sucede, el dato deja de ser un registro técnico y se convierte en una herramienta de decisión.</p>
+
+<h2 id="referencias">Referencias</h2>
+
+<p>Fuente original:</p>
+
+<ul>
+  <li><a href="https://github.com/MicrosoftDocs/dynamics365smb-docs/blob/main/business-central/manufacturing-powerbi-app-semantic-model.md">Documento en GitHub</a></li>
+  <li><a href="https://learn.microsoft.com/es-es/dynamics365/business-central/manufacturing-powerbi-app-semantic-model">Artículo en Microsoft Learn (español)</a></li>
+  <li><a href="https://learn.microsoft.com/en-us/dynamics365/business-central/across-powerbi-install-business-central-apps">Guía de instalación de apps de Power BI para Business Central</a></li>
+</ul>]]></content><author><name>{&quot;bio&quot; =&gt; &quot;Consultor certificado en Dynamics 365 Business Central&quot;, &quot;location&quot; =&gt; &quot;España&quot;, &quot;links&quot; =&gt; [{&quot;label&quot; =&gt; &quot;LinkedIn&quot;, &quot;icon&quot; =&gt; &quot;fab fa-fw fa-linkedin&quot;, &quot;url&quot; =&gt; &quot;https://www.linkedin.com/in/TU_USUARIO&quot;}, {&quot;label&quot; =&gt; &quot;GitHub&quot;, &quot;icon&quot; =&gt; &quot;fab fa-fw fa-github&quot;, &quot;url&quot; =&gt; &quot;https://github.com/mpachecodynamizatic&quot;}]}</name></author><category term="Business Intelligence" /><category term="Dynamics 365" /><category term="Power BI" /><category term="power bi" /><category term="business central" /><category term="manufacturing" /><category term="modelo semántico" /><category term="reporting" /><category term="producción" /><category term="business intelligence" /><summary type="html"><![CDATA[Descubre cómo el modelo semántico de Power BI Manufacturing en Business Central organiza datos de producción en un esquema en estrella para mejorar análisis, visibilidad y toma de decisiones.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/01-portada.png" /><media:content medium="image" url="http://localhost:4000/01-portada.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Transferencias WIP entre subcontratistas en Business Central: control real del producto semiterminado</title><link href="http://localhost:4000/dynamics%20365%20business%20central/fabricaci%C3%B3n/subcontrataci%C3%B3n/2026/07/10/subcontract-wip-transfers.html" rel="alternate" type="text/html" title="Transferencias WIP entre subcontratistas en Business Central: control real del producto semiterminado" /><published>2026-07-10T00:00:00+02:00</published><updated>2026-07-10T00:00:00+02:00</updated><id>http://localhost:4000/dynamics%20365%20business%20central/fabricaci%C3%B3n/subcontrataci%C3%B3n/2026/07/10/subcontract-wip-transfers</id><content type="html" xml:base="http://localhost:4000/dynamics%20365%20business%20central/fabricaci%C3%B3n/subcontrataci%C3%B3n/2026/07/10/subcontract-wip-transfers.html"><![CDATA[<p>En los entornos de fabricación en los que intervienen varios terceros, el producto semiterminado rara vez permanece estático. Puede salir del almacén propio, pasar por distintos subcontratistas y volver a la empresa para continuar o finalizar su proceso productivo. Este movimiento físico plantea una cuestión clave: ¿cómo registrar el desplazamiento del trabajo en curso sin tratarlo como si fuera un stock convencional?</p>
+
+<p>La funcionalidad de transferencias WIP entre subcontratistas en Dynamics 365 Business Central responde precisamente a ese reto. Su objetivo es documentar el movimiento del producto en curso entre ubicaciones de subcontratación o entre la planta propia y el proveedor externo, manteniendo al mismo tiempo la lógica financiera y operativa del pedido de producción.</p>
+
+<p>Para fabricantes con procesos complejos, esta capacidad supone una mejora relevante en trazabilidad, control operativo y coherencia de costes. También abre nuevas oportunidades para partners y consultores que trabajan en escenarios de producción avanzada, multioperación y logística externa.</p>
+
+<h2 id="qué-es">Qué es</h2>
+
+<p>Una transferencia WIP (Work in Progress) en Business Central representa el movimiento del artículo principal de una orden de producción mientras aún está en proceso. En lugar de registrar ese movimiento como una transferencia de inventario estándar, la solución lo trata como parte del flujo productivo del pedido.</p>
+
+<p>Esto es importante porque el producto semiterminado no se considera un artículo independiente que cambie de valoración cada vez que se mueve. Sigue bajo el paraguas de costes de la orden de producción. Por eso, al contabilizar una transferencia WIP no se generan movimientos estándar de producto, valor o almacén; el seguimiento se realiza en un registro específico de WIP de subcontratación.</p>
+
+<p>La funcionalidad está pensada para escenarios de subcontratación en varias etapas, incluyendo movimientos entre subcontratista y subcontratista. De esta forma, Business Central refleja mejor la realidad operativa sin forzar procesos de inventario que no corresponden al contexto del producto en curso.</p>
+
+<h2 id="principales-características">Principales características</h2>
+
+<p>Las transferencias WIP se activan desde la ruta de fabricación mediante un indicador específico en la línea de operación subcontratada. Ese enfoque evita duplicar líneas o modelados artificiales del proceso. La propia línea de ruta controla cuándo una operación debe provocar el traslado del producto semiterminado.</p>
+
+<p>Entre sus capacidades más destacadas se encuentran:</p>
+
+<ul>
+  <li>Uso de pedidos de transferencia para documentar envíos y recepciones del WIP.</li>
+  <li>Registro del movimiento en un libro específico de WIP de subcontratación.</li>
+  <li>Cálculo automático de ubicaciones de origen y destino según la fase del proceso.</li>
+  <li>Determinación de cantidades iniciales y posteriores basada en la orden de producción o en el saldo WIP existente.</li>
+  <li>Compatibilidad con escenarios de subcontratación en múltiples fases.</li>
+  <li>Posibilidad de ajustar manualmente cantidades WIP cuando existen discrepancias.</li>
+  <li>Opción de limpieza automática del WIP restante al finalizar la orden de producción.</li>
+</ul>
+
+<p>Además, Business Central permite definir descripciones específicas por operación, algo útil cuando el mismo artículo principal atraviesa varias etapas y conviene identificar el grado de avance que se está transfiriendo.</p>
+
+<h2 id="beneficios-para-las-empresas">Beneficios para las empresas</h2>
+
+<p>Desde una perspectiva empresarial, esta funcionalidad aporta tres ventajas claras: mayor visibilidad del flujo físico, mejor alineación entre operaciones y costes, y menor riesgo de inconsistencias en producción.</p>
+
+<h3 id="1-trazabilidad-más-fiel-al-proceso-real">1. Trazabilidad más fiel al proceso real</h3>
+<p>Las empresas pueden saber dónde se encuentra el producto semiterminado en cada fase: en tránsito, en el subcontratista actual o pendiente de retorno. Esto mejora el seguimiento del pedido y facilita la coordinación entre producción, compras y logística.</p>
+
+<h3 id="2-menos-distorsiones-contables">2. Menos distorsiones contables</h3>
+<p>Al no convertir el WIP en movimientos estándar de inventario, se evita mezclar un tránsito productivo con una transacción de stock tradicional. El sistema mantiene el coste bajo la orden de producción, lo que ofrece una lectura más coherente del proceso.</p>
+
+<h3 id="3-mayor-control-en-entornos-complejos">3. Mayor control en entornos complejos</h3>
+<p>Cuando existen operaciones paralelas, movimientos entre varios proveedores o necesidades de devolución, el sistema conserva una lógica unificada de seguimiento. Esto reduce el uso de controles manuales y mejora la capacidad de auditoría.</p>
+
+<h3 id="4-soporte-para-correcciones-operativas">4. Soporte para correcciones operativas</h3>
+<p>Si el stock físico no coincide con el registrado, se pueden realizar ajustes del WIP sin alterar el diseño del flujo productivo. También es posible limpiar cantidades sobrantes al cerrar la orden, lo que ayuda a dejar el sistema en un estado consistente.</p>
+
+<h2 id="beneficios-para-partners-y-consultores">Beneficios para partners y consultores</h2>
+
+<p>Para partners y consultores de Business Central, las transferencias WIP entre subcontratistas representan una funcionalidad con alto valor en proyectos industriales.</p>
+
+<ul>
+  <li>Permiten diseñar soluciones más cercanas al proceso real del cliente, especialmente en fabricación por fases.</li>
+  <li>Ayudan a reducir desarrollos ad hoc en escenarios donde antes se recurría a personalizaciones para controlar producto semiterminado fuera de planta.</li>
+  <li>Facilitan conversaciones de preventa y diagnóstico funcional al ofrecer una respuesta clara para la logística del WIP.</li>
+  <li>Abren oportunidades de consultoría en parametrización, rutas, ubicaciones, transfer routes y gobierno de datos de producción.</li>
+  <li>Mejoran la propuesta de valor en implantaciones para sectores con operaciones externas recurrentes, como metal, mecanizado, tratamiento de superficies o ensamblaje especializado.</li>
+</ul>
+
+<p>En términos prácticos, esta funcionalidad puede simplificar el blueprint durante la fase de análisis, porque permite separar mejor qué parte del flujo corresponde a compras, cuál pertenece a producción y cuál debe tratarse como tránsito productivo.</p>
+
+<h2 id="casos-de-uso">Casos de uso</h2>
+
+<h3 id="subcontratación-secuencial-de-varias-operaciones">Subcontratación secuencial de varias operaciones</h3>
+<p>Una empresa envía una pieza a un proveedor para mecanizado, después a un segundo proveedor para tratamiento térmico y finalmente a un tercero para acabado. Business Central permite registrar cada movimiento como parte del WIP sin convertir cada fase en stock estándar.</p>
+
+<h3 id="envío-inicial-desde-almacén-propio-al-primer-proveedor">Envío inicial desde almacén propio al primer proveedor</h3>
+<p>Cuando la primera operación subcontratada empieza fuera de planta, el sistema calcula la transferencia desde la ubicación de la orden de producción hacia la ubicación del subcontratista.</p>
+
+<h3 id="movimiento-entre-subcontratistas">Movimiento entre subcontratistas</h3>
+<p>Si el producto ya está en una ubicación externa y debe pasar a otra operación también subcontratada, el sistema determina el origen a partir del proveedor anterior y genera la transferencia correspondiente.</p>
+
+<h3 id="retorno-del-producto-semiterminado-a-la-empresa">Retorno del producto semiterminado a la empresa</h3>
+<p>Si el WIP necesita volver a la ubicación propia, se pueden generar transferencias de retorno según las cantidades registradas en el libro WIP.</p>
+
+<h3 id="ajuste-de-discrepancias-y-cierre-de-orden">Ajuste de discrepancias y cierre de orden</h3>
+<p>Cuando existe diferencia entre la cantidad física y la registrada, el equipo puede ejecutar ajustes. Al finalizar la orden, también puede realizar una limpieza automática del WIP pendiente.</p>
+
+<h2 id="requisitos-y-configuración">Requisitos y configuración</h2>
+
+<p>Para que la funcionalidad encaje correctamente en una implantación, conviene revisar varios elementos de configuración.</p>
+
+<h3 id="1-ruta-de-fabricación">1. Ruta de fabricación</h3>
+<p>La operación subcontratada debe estar asociada a un centro de trabajo de subcontratación. En esa línea de ruta se activa el indicador de transferencia WIP.</p>
+
+<h3 id="2-proveedor-y-ubicación-de-subcontratación">2. Proveedor y ubicación de subcontratación</h3>
+<p>Cada subcontratista necesita una ubicación asociada en su ficha. La recomendación práctica es definir una ubicación separada para cada proveedor para evitar ambigüedades operativas.</p>
+
+<h3 id="3-rutas-de-transferencia">3. Rutas de transferencia</h3>
+<p>Si se trabaja con tránsito o con configuraciones de almacén avanzadas, es especialmente recomendable definir transfer routes con código in-transit entre ubicaciones propias y externas, tanto a la ida como al retorno.</p>
+
+<h3 id="4-pedido-de-compra-de-subcontratación">4. Pedido de compra de subcontratación</h3>
+<p>La creación de la orden de transferencia WIP parte del pedido de compra de subcontratación. Por tanto, el diseño del ciclo debe contemplar la relación entre orden de producción, compra subcontratada y movimientos logísticos.</p>
+
+<h3 id="5-gobierno-de-almacén-y-restricciones">5. Gobierno de almacén y restricciones</h3>
+<p>Hay restricciones importantes: no se admiten números de serie o lote en líneas WIP, no se generan ciertos documentos de picking o ubicación para estas líneas y algunas combinaciones de almacén requieren especial cuidado al trabajar con transferencias directas.</p>
+
+<h2 id="buenas-prácticas">Buenas prácticas</h2>
+
+<ul>
+  <li>Crear una ubicación específica por subcontratista.</li>
+  <li>Usar rutas de transferencia con ubicación en tránsito cuando existan configuraciones avanzadas de almacén.</li>
+  <li>Revisar que la operación subcontratada no provoque efectos no deseados al contabilizar recepciones si es la última operación del proceso.</li>
+  <li>Definir descripciones de transferencia por operación para diferenciar etapas del producto.</li>
+  <li>Establecer un procedimiento de conciliación periódica entre saldo WIP físico y saldo WIP registrado.</li>
+  <li>Formar al equipo de producción, compras y logística sobre la diferencia entre transferencia estándar y transferencia WIP.</li>
+  <li>Probar escenarios de retorno, operaciones paralelas y cierre de orden antes del arranque.</li>
+</ul>
+
+<h2 id="checklist-de-implantación">Checklist de implantación</h2>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Confirmar que el proceso del cliente requiere seguimiento del producto semiterminado entre terceros.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Identificar operaciones subcontratadas en la ruta de fabricación.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Asignar centros de trabajo de subcontratación y proveedores.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Crear una ubicación de subcontratación por proveedor.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Configurar transfer routes con in-transit cuando aplique.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Activar la opción de transferencia WIP en las operaciones correspondientes.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Validar la generación de pedidos de compra de subcontratación.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Probar transferencias desde planta, entre subcontratistas y de retorno.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Verificar ajustes manuales de WIP.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Definir criterio de limpieza WIP al finalizar órdenes.</li>
+</ul>
+
+<h2 id="resumen-de-funcionalidades">Resumen de funcionalidades</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Funcionalidad</th>
+      <th>Beneficio</th>
+      <th>Impacto</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Transferencia WIP desde pedido de compra subcontratado</td>
+      <td>Conecta compras, producción y logística</td>
+      <td>Reduce pasos manuales</td>
+    </tr>
+    <tr>
+      <td>Libro específico de WIP</td>
+      <td>Separa el seguimiento operativo del inventario estándar</td>
+      <td>Mejora la coherencia de costes</td>
+    </tr>
+    <tr>
+      <td>Cálculo automático de ubicaciones</td>
+      <td>Agiliza movimientos entre fases y proveedores</td>
+      <td>Menos errores operativos</td>
+    </tr>
+    <tr>
+      <td>Ajuste manual de cantidades</td>
+      <td>Permite corregir discrepancias</td>
+      <td>Mayor fiabilidad del dato</td>
+    </tr>
+    <tr>
+      <td>Limpieza WIP al cierre</td>
+      <td>Evita saldos pendientes al finalizar</td>
+      <td>Mejora el cierre de producción</td>
+    </tr>
+    <tr>
+      <td>Soporte multi-stage subcontracting</td>
+      <td>Da cobertura a procesos industriales complejos</td>
+      <td>Escalabilidad funcional</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="conclusiones">Conclusiones</h2>
+
+<p>La nueva gestión de transferencias WIP entre subcontratistas en Business Central responde a una necesidad muy concreta de los fabricantes: controlar el producto semiterminado cuando sale de la planta, sin desvirtuar su naturaleza como parte de una orden de producción.</p>
+
+<p>Su valor no está solo en registrar movimientos, sino en hacerlo con una lógica funcional más precisa. Esto ayuda a alinear el mundo físico del taller, la logística externa y el control económico del proceso productivo.</p>
+
+<p>Para empresas industriales, la funcionalidad aporta trazabilidad y orden. Para partners y consultores, ofrece una pieza sólida para construir soluciones de fabricación más maduras y menos dependientes de desarrollos a medida. Y para el usuario final, simplifica la operativa diaria en escenarios donde el WIP ya no puede gestionarse con simples notas o controles externos.</p>
+
+<p>En definitiva, estamos ante una mejora especialmente relevante para organizaciones que trabajan con subcontratación por fases y necesitan gobernar con rigor el flujo del producto en curso.</p>
+
+<h2 id="referencias">Referencias</h2>
+
+<p>Fuente original:</p>
+
+<p><a href="https://learn.microsoft.com/en-us/dynamics365/business-central/subcontract-wip-transfers">https://learn.microsoft.com/en-us/dynamics365/business-central/subcontract-wip-transfers</a></p>]]></content><author><name>{&quot;bio&quot; =&gt; &quot;Consultor certificado en Dynamics 365 Business Central&quot;, &quot;location&quot; =&gt; &quot;España&quot;, &quot;links&quot; =&gt; [{&quot;label&quot; =&gt; &quot;LinkedIn&quot;, &quot;icon&quot; =&gt; &quot;fab fa-fw fa-linkedin&quot;, &quot;url&quot; =&gt; &quot;https://www.linkedin.com/in/TU_USUARIO&quot;}, {&quot;label&quot; =&gt; &quot;GitHub&quot;, &quot;icon&quot; =&gt; &quot;fab fa-fw fa-github&quot;, &quot;url&quot; =&gt; &quot;https://github.com/mpachecodynamizatic&quot;}]}</name></author><category term="Dynamics 365 Business Central" /><category term="Fabricación" /><category term="Subcontratación" /><category term="business central" /><category term="fabricación" /><category term="subcontracting" /><category term="wip" /><category term="work in progress" /><category term="transfer orders" /><category term="supply chain" /><category term="microsoft" /><summary type="html"><![CDATA[Analizamos cómo Business Central gestiona las transferencias WIP entre subcontratistas, qué requisitos exige y qué beneficios aporta a fabricantes, partners y consultores.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/01-portada.png" /><media:content medium="image" url="http://localhost:4000/01-portada.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

@@ -1,0 +1,27 @@
+¿Tu reporting de fabricación te dice lo que ya pasó… o te ayuda a decidir qué hacer ahora?
+
+He preparado un nuevo contenido sobre Power BI Manufacturing en Business Central centrado en una pieza clave: el modelo semántico que Microsoft organiza en esquema en estrella.
+
+¿Por qué importa?
+Porque no hablamos solo de visualizaciones bonitas. Hablamos de una base analítica que conecta capacidad, órdenes de producción, rutas, costes y contexto de negocio para que dirección, operaciones y supervisión trabajen con una misma lectura del dato.
+
+En el artículo verás:
+• Qué es realmente el modelo semántico de Manufacturing.
+• Qué tablas de hechos y dimensiones lo componen.
+• Qué beneficios aporta a empresas, partners y consultores.
+• Qué requisitos y buenas prácticas conviene revisar antes de implantarlo.
+• Qué casos de uso encajan mejor en entornos industriales.
+
+Si trabajas con Business Central y quieres que tus datos de planta se conviertan en decisiones más rápidas, más coherentes y más accionables, este contenido te interesa.
+
+¿Qué KPI de fabricación te cuesta más consolidar hoy: capacidad, costes, tiempos o carga de centros?
+
+#PowerBI
+#BusinessCentral
+#Manufacturing
+#AnaliticaDeDatos
+#BusinessIntelligence
+#Industria
+#ERP
+#TransformacionDigital
+#MicrosoftDynamics365

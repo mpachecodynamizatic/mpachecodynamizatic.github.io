@@ -1,0 +1,784 @@
+
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.28.0 by Michael Rose
+  Copyright 2013-2026 Michael Rose - mademistakes.com | @mmistakes
+  Copyright 2024-2026 iBug - ibugone.com | @iBug
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="es-ES" class="no-js">
+  <head>
+    
+<meta charset="utf-8">
+
+
+<!-- begin _includes/seo.html --><title>Sustainability Certificates en Dynamics 365 Business Central | Marcelino Pacheco</title>
+<meta name="description" content="Guía práctica para entender y comunicar cómo Dynamics 365 Business Central permite crear, clasificar y asignar certificados de sostenibilidad a proveedores y artículos, y cómo conecta con los requisitos de Digital Product Passport.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="Marcelino Pacheco">
+<meta property="og:title" content="Sustainability Certificates en Dynamics 365 Business Central">
+<meta property="og:url" content="http://localhost:4000/dynamics%20365%20business%20central/sostenibilidad/esg/2026/07/10/sustainability-certificates.html">
+
+
+  <meta property="og:description" content="Guía práctica para entender y comunicar cómo Dynamics 365 Business Central permite crear, clasificar y asignar certificados de sostenibilidad a proveedores y artículos, y cómo conecta con los requisitos de Digital Product Passport.">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/posts/sustainability-certificates/01-portada.png">
+  
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2026-07-10T00:00:00+02:00">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/dynamics%20365%20business%20central/sostenibilidad/esg/2026/07/10/sustainability-certificates.html">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Marcelino Pacheco Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    
+<nav class="skip-links" aria-label="Skip links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Saltar a navegación principal</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Saltar a contenido</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Saltar a pie</a></li>
+  </ul>
+</nav>
+
+    
+
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
+        
+        <a class="site-title" href="/">
+          Marcelino Pacheco
+          <span class="site-subtitle">Cacharreando un poco con BC</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/"
+                
+                
+              >Inicio</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/categories/"
+                
+                
+              >Categorías</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/tags/"
+                
+                
+              >Etiquetas</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/about/"
+                
+                
+              >Sobre mí</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Alternar menú</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+
+
+<div id="main" role="main">
+  
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url"></a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>Consultor certificado en Dynamics 365 Business Central</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Seguir</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-location-dot" aria-hidden="true"></i> <span itemprop="name" class="p-locality">España</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://www.linkedin.com/in/TU_USUARIO" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/mpachecodynamizatic" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Sustainability Certificates en Dynamics 365 Business Central">
+    <meta itemprop="description" content="Guía práctica para entender y comunicar cómo Dynamics 365 Business Central permite crear, clasificar y asignar certificados de sostenibilidad a proveedores y artículos, y cómo conecta con los requisitos de Digital Product Passport.">
+    <meta itemprop="datePublished" content="2026-07-10T00:00:00+02:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/dynamics%20365%20business%20central/sostenibilidad/esg/2026/07/10/sustainability-certificates.html" itemprop="url">Sustainability Certificates en Dynamics 365 Business Central
+</a>
+          </h1>
+          
+
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          7 minuto(s) de lectura
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc" aria-label="Table of contents">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> En esta página</h4></header>
+              <ul class="toc__menu"><li><a href="#cómo-acreditar-sostenibilidad-en-artículos-y-proveedores">Cómo acreditar sostenibilidad en artículos y proveedores</a></li><li><a href="#por-qué-esta-funcionalidad-importa-ahora">Por qué esta funcionalidad importa ahora</a></li><li><a href="#qué-permite-registrar-business-central">Qué permite registrar Business Central</a><ul><li><a href="#1-área-del-certificado">1. Área del certificado</a></li><li><a href="#2-estándar-del-certificado">2. Estándar del certificado</a></li></ul></li><li><a href="#cómo-se-configura-una-secuencia-lógica-y-sencilla">Cómo se configura: una secuencia lógica y sencilla</a><ul><li><a href="#paso-1-crear-áreas-de-certificado">Paso 1. Crear áreas de certificado</a></li><li><a href="#paso-2-crear-estándares-de-certificado">Paso 2. Crear estándares de certificado</a></li><li><a href="#paso-3-crear-el-certificado-de-sostenibilidad">Paso 3. Crear el certificado de sostenibilidad</a></li></ul></li><li><a href="#cómo-se-utiliza-en-proveedores-y-artículos">Cómo se utiliza en proveedores y artículos</a><ul><li><a href="#en-proveedores">En proveedores</a></li><li><a href="#en-artículos">En artículos</a></li></ul></li><li><a href="#casos-de-uso-con-impacto-real">Casos de uso con impacto real</a><ul><li><a href="#compras-responsables">Compras responsables</a></li><li><a href="#catálogo-de-producto-con-atributos-esg">Catálogo de producto con atributos ESG</a></li><li><a href="#reporting-para-clientes-y-auditorías">Reporting para clientes y auditorías</a></li><li><a href="#gobierno-del-dato-esg">Gobierno del dato ESG</a></li></ul></li><li><a href="#conexión-con-el-digital-product-passport-dpp">Conexión con el Digital Product Passport (DPP)</a></li><li><a href="#importante-qr-y-dpp">Importante: QR y DPP</a></li><li><a href="#encaje-dentro-de-la-estrategia-de-sostenibilidad-de-business-central">Encaje dentro de la estrategia de sostenibilidad de Business Central</a></li><li><a href="#buenas-prácticas-para-implantar-sustainability-certificates">Buenas prácticas para implantar Sustainability Certificates</a><ul><li><a href="#1-definir-una-taxonomía-clara">1. Definir una taxonomía clara</a></li><li><a href="#2-establecer-criterios-de-validación">2. Establecer criterios de validación</a></li><li><a href="#3-alinear-compras-sostenibilidad-y-datos-maestros">3. Alinear compras, sostenibilidad y datos maestros</a></li><li><a href="#4-pensar-en-reporting-desde-el-principio">4. Pensar en reporting desde el principio</a></li><li><a href="#5-preparar-la-evolución-hacia-dpp">5. Preparar la evolución hacia DPP</a></li></ul></li><li><a href="#conclusión">Conclusión</a></li><li><a href="#meta-title-seo">Meta title SEO</a></li><li><a href="#meta-description-seo">Meta description SEO</a></li></ul>
+            </nav>
+          </aside>
+        
+        <p><img src="/assets/posts/sustainability-certificates/01-portada.png" alt="Portada" class="align-center" style="max-width: 700px;" /></p>
+
+<h2 id="cómo-acreditar-sostenibilidad-en-artículos-y-proveedores">Cómo acreditar sostenibilidad en artículos y proveedores</h2>
+
+<p>En muchas organizaciones, la sostenibilidad ya no se gestiona como un discurso corporativo aislado. Se ha convertido en una exigencia operativa, comercial y regulatoria. Clientes, partners, equipos de compras y responsables de cumplimiento piden evidencias verificables: qué proveedores cumplen determinados estándares, qué productos incorporan criterios medioambientales y cómo se documenta esa información dentro de los procesos de negocio.</p>
+
+<p>Ahí es donde entra en juego la funcionalidad <strong>Sustainability Certificates</strong> de <strong>Dynamics 365 Business Central</strong>. Esta capacidad permite registrar y utilizar certificados de sostenibilidad para <strong>proveedores</strong> y <strong>artículos</strong>, aportando una estructura clara para clasificar, verificar y consultar información relacionada con estándares ESG.</p>
+
+<p>Más allá del dato, lo interesante es el enfoque: Business Central no trata el certificado como un comentario libre o una nota auxiliar, sino como una <strong>entidad gestionable</strong> con atributos definidos. En la práctica, esto ayuda a ordenar la información, mejorar la toma de decisiones y preparar a la empresa para nuevos requerimientos de transparencia en la cadena de suministro.</p>
+
+<h2 id="por-qué-esta-funcionalidad-importa-ahora">Por qué esta funcionalidad importa ahora</h2>
+
+<p>El mercado exige cada vez más pruebas de sostenibilidad, no solo declaraciones. Las empresas necesitan demostrar que trabajan con proveedores responsables, que compran o fabrican productos alineados con criterios ambientales y que pueden respaldar esas afirmaciones con datos estructurados.</p>
+
+<p>Los certificados de sostenibilidad cumplen precisamente esa función. Sirven como verificación independiente de que una empresa o un producto cumple ciertos criterios medioambientales, sociales o de gobernanza. En términos de negocio, eso se traduce en varios beneficios:</p>
+
+<ul>
+  <li><strong>Mayor confianza</strong> con clientes y socios.</li>
+  <li><strong>Mejor control de la cadena de suministro</strong>.</li>
+  <li><strong>Reducción de riesgos reputacionales y de cumplimiento</strong>.</li>
+  <li><strong>Trazabilidad más sólida</strong> para auditorías, concursos y reporting.</li>
+  <li><strong>Base documental</strong> para iniciativas de economía circular y producto sostenible.</li>
+</ul>
+
+<p>Desde el punto de vista operativo, tener esta información dentro del ERP evita dispersarla entre hojas de cálculo, correos o repositorios difíciles de mantener.</p>
+
+<h2 id="qué-permite-registrar-business-central">Qué permite registrar Business Central</h2>
+
+<p>La funcionalidad está pensada para que el certificado tenga una estructura clara y reutilizable. Al crear un certificado, Business Central permite definir elementos como:</p>
+
+<ul>
+  <li><strong>Tipo</strong>: si el certificado aplica a un proveedor o a un artículo.</li>
+  <li><strong>Número</strong>.</li>
+  <li><strong>Nombre</strong>.</li>
+  <li><strong>Área</strong> del certificado.</li>
+  <li><strong>Estándar</strong> del certificado.</li>
+  <li><strong>Emisor</strong>.</li>
+  <li><strong>Valor</strong>, cuando el certificado incluye una medida cuantificable.</li>
+</ul>
+
+<p>Este diseño es importante porque separa la clasificación del certificado en dos dimensiones que ayudan mucho en entornos reales:</p>
+
+<h3 id="1-área-del-certificado">1. Área del certificado</h3>
+
+<p>El área representa la temática o ámbito específico que cubre el certificado. Sirve para agrupar certificados similares según sus características. Por ejemplo, una organización podría utilizar áreas relacionadas con eficiencia energética, gestión de residuos, reciclabilidad, abastecimiento responsable o huella ambiental.</p>
+
+<h3 id="2-estándar-del-certificado">2. Estándar del certificado</h3>
+
+<p>El estándar identifica el marco o referencia concreta del certificado. Según la documentación, estos estándares deberían ofrecer criterios <strong>verificados</strong>, <strong>transparentes</strong> y <strong>medibles</strong>, alineados con marcos ESG internacionales. Esto refuerza la fiabilidad del dato y ayuda a distinguir entre una simple declaración interna y una acreditación con mayor robustez.</p>
+
+<h2 id="cómo-se-configura-una-secuencia-lógica-y-sencilla">Cómo se configura: una secuencia lógica y sencilla</h2>
+
+<p>La configuración sigue una lógica muy razonable:</p>
+
+<h3 id="paso-1-crear-áreas-de-certificado">Paso 1. Crear áreas de certificado</h3>
+
+<p>Primero se crean las áreas de certificado de sostenibilidad. Para ello, se accede a la página correspondiente de áreas, se da de alta un nuevo registro y se informan los campos de número y nombre.</p>
+
+<h3 id="paso-2-crear-estándares-de-certificado">Paso 2. Crear estándares de certificado</h3>
+
+<p>A continuación, se definen los estándares. De nuevo, el proceso consiste en abrir la página específica de estándares, crear un nuevo registro y completar su número y nombre.</p>
+
+<h3 id="paso-3-crear-el-certificado-de-sostenibilidad">Paso 3. Crear el certificado de sostenibilidad</h3>
+
+<p>Después se crea el certificado propiamente dicho. En este punto se indica si el certificado es para <strong>vendor</strong> o <strong>item</strong>, junto con su número, nombre, área, estándar, emisor y, si procede, un valor cuantificable.</p>
+
+<p>Un detalle especialmente útil es que Business Central también permite crear el certificado <strong>directamente desde la ficha del proveedor o del artículo</strong>. En ese caso, el tipo se completa automáticamente en función del origen, reduciendo errores y agilizando el mantenimiento.</p>
+
+<h2 id="cómo-se-utiliza-en-proveedores-y-artículos">Cómo se utiliza en proveedores y artículos</h2>
+
+<p>Una vez creado el certificado, el siguiente paso es vincularlo a los registros maestros correspondientes.</p>
+
+<h3 id="en-proveedores">En proveedores</h3>
+
+<p>El certificado se puede asignar desde la ficha del proveedor, dentro de la información general. Esto facilita identificar de forma rápida qué proveedores cuentan con una acreditación concreta y abre la puerta a procesos de selección, segmentación o filtrado más consistentes.</p>
+
+<h3 id="en-artículos">En artículos</h3>
+
+<p>En el caso de los artículos, la relación se gestiona desde la ficha del producto, dentro de la sección de sostenibilidad. Esto resulta especialmente valioso cuando el foco está en la trazabilidad del producto, la comunicación comercial o la preparación para requisitos normativos que exigen evidencias a nivel de artículo.</p>
+
+<h2 id="casos-de-uso-con-impacto-real">Casos de uso con impacto real</h2>
+
+<p>Aunque la funcionalidad parece sencilla, su valor aumenta mucho cuando se conecta con procesos empresariales habituales:</p>
+
+<h3 id="compras-responsables">Compras responsables</h3>
+
+<p>Los equipos de compras pueden priorizar proveedores con certificaciones reconocidas. Eso ayuda a profesionalizar la evaluación de terceros y a reforzar políticas internas de procurement sostenible.</p>
+
+<h3 id="catálogo-de-producto-con-atributos-esg">Catálogo de producto con atributos ESG</h3>
+
+<p>Si determinadas líneas de producto requieren demostrar reciclabilidad, eficiencia o cumplimiento de estándares concretos, el certificado pasa a ser un atributo gestionable dentro del ERP, no un dato externo difícil de mantener.</p>
+
+<h3 id="reporting-para-clientes-y-auditorías">Reporting para clientes y auditorías</h3>
+
+<p>Cuando un cliente solicita evidencias de sostenibilidad o un auditor pide respaldo documental, disponer del certificado estructurado en Business Central simplifica la respuesta y reduce tiempos de búsqueda.</p>
+
+<h3 id="gobierno-del-dato-esg">Gobierno del dato ESG</h3>
+
+<p>A medida que la sostenibilidad gana peso en compliance y reporting, es clave tener datos consistentes, normalizados y accesibles. Los certificados ayudan a reforzar ese gobierno del dato.</p>
+
+<h2 id="conexión-con-el-digital-product-passport-dpp">Conexión con el Digital Product Passport (DPP)</h2>
+
+<p>Uno de los puntos más relevantes de la documentación es la relación con los requisitos de <strong>Digital Product Passport</strong>. Business Central indica que el soporte para estos requisitos ayuda a las empresas a responder a futuras exigencias europeas de sostenibilidad, mediante la captura de datos ambientales clave directamente en el sistema.</p>
+
+<p>En este contexto, la documentación destaca tres campos de especial interés en la ficha del artículo:</p>
+
+<ul>
+  <li><strong>Recyclability Percentage</strong>: porcentaje de contenido reciclable del producto.</li>
+  <li><strong>Energy Efficiency Ratings</strong>: información estandarizada sobre eficiencia energética, como la categoría o etiqueta.</li>
+  <li><strong>End-of-Life Information</strong>: instrucciones de eliminación, reciclaje, devolución o notas sobre impacto ambiental.</li>
+</ul>
+
+<p>Esto es especialmente relevante para organizaciones que quieren anticiparse a escenarios donde la trazabilidad del producto y la transparencia ambiental dejarán de ser diferenciales para convertirse en requisitos prácticamente obligatorios.</p>
+
+<h2 id="importante-qr-y-dpp">Importante: QR y DPP</h2>
+
+<p>La documentación también aclara un matiz importante: <strong>Business Central no genera códigos QR incrustados para DPP</strong>. Sin embargo, sí proporciona datos que pueden exponerse a una herramienta externa desde la que trabajar la URL asociada al código QR.</p>
+
+<p>Es decir, el ERP puede actuar como fuente fiable del dato, mientras que la experiencia final del pasaporte digital puede completarse con soluciones complementarias.</p>
+
+<h2 id="encaje-dentro-de-la-estrategia-de-sostenibilidad-de-business-central">Encaje dentro de la estrategia de sostenibilidad de Business Central</h2>
+
+<p>Aunque este artículo se centra en los certificados, conviene ver la funcionalidad dentro del marco más amplio de sostenibilidad de Business Central. Microsoft documenta capacidades para gestionar emisiones de gases de efecto invernadero, intensidad de agua y residuos, así como la recopilación de datos mediante diarios de sostenibilidad, diarios generales y documentos de compra.</p>
+
+<p>Además, el enfoque incorpora categorías como <strong>Scope 1</strong>, <strong>Scope 2</strong> y <strong>Scope 3</strong>, junto con emisiones fuera de alcance y métricas de agua y residuos. Esto sitúa los certificados en un ecosistema más completo: no solo sirven para validar atributos de proveedores o artículos, sino también para formar parte de una arquitectura de información ESG más madura.</p>
+
+<h2 id="buenas-prácticas-para-implantar-sustainability-certificates">Buenas prácticas para implantar Sustainability Certificates</h2>
+
+<p>Más allá de la configuración técnica, hay varias recomendaciones prácticas que pueden marcar la diferencia:</p>
+
+<h3 id="1-definir-una-taxonomía-clara">1. Definir una taxonomía clara</h3>
+
+<p>Antes de cargar certificados, conviene consensuar qué áreas y estándares se van a utilizar. Una taxonomía desordenada provoca duplicidades y dificulta el reporting.</p>
+
+<h3 id="2-establecer-criterios-de-validación">2. Establecer criterios de validación</h3>
+
+<p>No todos los certificados tienen el mismo peso. Es recomendable definir una política interna sobre qué emisores o qué tipos de acreditación se consideran válidos para cada caso.</p>
+
+<h3 id="3-alinear-compras-sostenibilidad-y-datos-maestros">3. Alinear compras, sostenibilidad y datos maestros</h3>
+
+<p>La calidad del dato mejora mucho cuando compras, compliance, sostenibilidad y administración funcional trabajan con un criterio compartido.</p>
+
+<h3 id="4-pensar-en-reporting-desde-el-principio">4. Pensar en reporting desde el principio</h3>
+
+<p>Si el objetivo final es segmentar proveedores, documentar productos o responder a auditorías, conviene modelar la estructura del dato con ese uso final en mente.</p>
+
+<h3 id="5-preparar-la-evolución-hacia-dpp">5. Preparar la evolución hacia DPP</h3>
+
+<p>Aunque no todas las empresas estén ya obligadas a reportar con este nivel de detalle, capturar bien la información desde ahora reduce fricción futura.</p>
+
+<h2 id="conclusión">Conclusión</h2>
+
+<p><strong>Sustainability Certificates</strong> en Business Central es una funcionalidad pequeña en apariencia, pero estratégica en significado. Permite transformar la sostenibilidad en un dato estructurado dentro del ERP, vinculando certificados a proveedores y artículos con una lógica consistente, reutilizable y orientada a negocio.</p>
+
+<p>Para partners, consultores y responsables funcionales, esta característica abre una conversación muy actual: cómo pasar de la narrativa ESG a la <strong>gestión operativa de evidencias</strong>. Y para las empresas, representa un paso práctico hacia una cadena de suministro más transparente, un catálogo de producto más trazable y una mejor preparación ante los requisitos regulatorios que ya están llamando a la puerta.</p>
+
+<p>En definitiva, no se trata solo de registrar certificados. Se trata de convertir la sostenibilidad en información fiable, accesible y accionable.</p>
+
+<h2 id="meta-title-seo">Meta title SEO</h2>
+
+<p>Sustainability Certificates en Business Central: guía práctica para proveedores y artículos</p>
+
+<h2 id="meta-description-seo">Meta description SEO</h2>
+
+<p>Descubre cómo configurar y usar Sustainability Certificates en Dynamics 365 Business Central para proveedores y artículos, y cómo prepararte para requisitos como Digital Product Passport.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+  
+    
+
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Etiquetas: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#art%C3%ADculos" class="page__taxonomy-item p-category" rel="tag">artículos</a><span class="sep">, </span>
+    
+      <a href="/tags/#business-central" class="page__taxonomy-item p-category" rel="tag">Business Central</a><span class="sep">, </span>
+    
+      <a href="/tags/#digital-product-passport" class="page__taxonomy-item p-category" rel="tag">Digital Product Passport</a><span class="sep">, </span>
+    
+      <a href="/tags/#esg" class="page__taxonomy-item p-category" rel="tag">ESG</a><span class="sep">, </span>
+    
+      <a href="/tags/#proveedores" class="page__taxonomy-item p-category" rel="tag">proveedores</a><span class="sep">, </span>
+    
+      <a href="/tags/#sostenibilidad" class="page__taxonomy-item p-category" rel="tag">sostenibilidad</a><span class="sep">, </span>
+    
+      <a href="/tags/#sustainability-certificates" class="page__taxonomy-item p-category" rel="tag">sustainability-certificates</a>
+    
+    </span>
+  </p>
+
+
+  
+
+  
+    
+
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categorías: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#dynamics-365-business-central" class="page__taxonomy-item p-category" rel="tag">Dynamics 365 Business Central</a><span class="sep">, </span>
+    
+      <a href="/categories/#esg" class="page__taxonomy-item p-category" rel="tag">ESG</a><span class="sep">, </span>
+    
+      <a href="/categories/#sostenibilidad" class="page__taxonomy-item p-category" rel="tag">Sostenibilidad</a>
+    
+    </span>
+  </p>
+
+
+  
+
+
+        
+
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Actualizado:</strong> <time class="dt-published" datetime="2026-07-10T00:00:00+02:00">July 10, 2026</time></p>
+
+
+      </footer>
+
+      
+<section class="page__share">
+  <h4 class="page__share-title">Compartir en</h4>
+
+  <a href="https://x.com/intent/tweet?text=Sustainability+Certificates+en+Dynamics+365+Business+Central%20http%3A%2F%2Flocalhost%3A4000%2Fdynamics%2520365%2520business%2520central%2Fsostenibilidad%2Fesg%2F2026%2F07%2F10%2Fsustainability-certificates.html" class="btn btn--x" aria-label="Share on X" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir en X">
+    <i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i><span> X</span>
+  </a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fdynamics%2520365%2520business%2520central%2Fsostenibilidad%2Fesg%2F2026%2F07%2F10%2Fsustainability-certificates.html" class="btn btn--facebook" aria-label="Share on Facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir en Facebook">
+    <i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span>
+  </a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/dynamics%20365%20business%20central/sostenibilidad/esg/2026/07/10/sustainability-certificates.html" class="btn btn--linkedin" aria-label="Share on LinkedIn" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir en LinkedIn">
+    <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span>
+  </a>
+
+  <a href="https://bsky.app/intent/compose?text=Sustainability+Certificates+en+Dynamics+365+Business+Central%20http%3A%2F%2Flocalhost%3A4000%2Fdynamics%2520365%2520business%2520central%2Fsostenibilidad%2Fesg%2F2026%2F07%2F10%2Fsustainability-certificates.html" class="btn btn--bluesky" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir en Bluesky">
+    <i class="fab fa-fw fa-bluesky" aria-hidden="true"></i><span> Bluesky</span>
+  </a>
+</section>
+
+
+      
+
+  <nav class="pagination" aria-label="Post pagination">
+    
+      <a href="/dynamics%20365%20business%20central/fabricaci%C3%B3n/subcontrataci%C3%B3n/2026/07/10/subcontract-wip-transfers.html" class="pagination--pager" title="Transferencias WIP entre subcontratistas en Business Central: control real del producto semiterminado">Anterior</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Siguiente</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    
+
+<div class="page__related">
+  
+  <h2 class="page__related-title">Puede que también te interese</h2>
+  <div class="grid__wrapper">
+    
+      
+      
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/dynamics%20365%20business%20central/fabricaci%C3%B3n/subcontrataci%C3%B3n/2026/07/10/subcontract-wip-transfers.html" rel="permalink">Transferencias WIP entre subcontratistas en Business Central: control real del producto semiterminado
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          8 minuto(s) de lectura
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt p-summary" itemprop="description">En los entornos de fabricación en los que intervienen varios terceros, el producto semiterminado rara vez permanece estático. Puede salir del almacén propio,...</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/business%20intelligence/dynamics%20365/power%20bi/2026/07/10/powerbi-manufacturing.html" rel="permalink">Power BI Manufacturing en Business Central: modelo semántico para optimizar la producción
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          9 minuto(s) de lectura
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt p-summary" itemprop="description">La analítica de fabricación ya no consiste solo en consultar informes históricos. En las organizaciones que trabajan con Dynamics 365 Business Central, el va...</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/posts/inventory-how-transfer-between-locations/01-portada.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/dynamics%20365/business%20central/inventario/2026/07/10/inventory-how-transfer-between-locations.html" rel="permalink">Cómo transferir inventario entre ubicaciones en Business Central
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minuto(s) de lectura
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt p-summary" itemprop="description">Aprende a gestionar transferencias de inventario entre almacenes en Business Central mediante órdenes de transferencia y diarios de reclasificación.
+</p>
+  </article>
+</div>
+
+    
+  </div>
+</div>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Seguir:</strong></li>
+    
+
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-square-rss" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2026 <a href="http://localhost:4000">Marcelino Pacheco</a>. Funciona con <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,806 @@
+
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.28.0 by Michael Rose
+  Copyright 2013-2026 Michael Rose - mademistakes.com | @mmistakes
+  Copyright 2024-2026 iBug - ibugone.com | @iBug
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="es-ES" class="no-js">
+  <head>
+    
+<meta charset="utf-8">
+
+
+<!-- begin _includes/seo.html --><title>Transferencias WIP entre subcontratistas en Business Central: control real del producto semiterminado | Marcelino Pacheco</title>
+<meta name="description" content="Analizamos cómo Business Central gestiona las transferencias WIP entre subcontratistas, qué requisitos exige y qué beneficios aporta a fabricantes, partners y consultores.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="Marcelino Pacheco">
+<meta property="og:title" content="Transferencias WIP entre subcontratistas en Business Central: control real del producto semiterminado">
+<meta property="og:url" content="http://localhost:4000/dynamics%20365%20business%20central/fabricaci%C3%B3n/subcontrataci%C3%B3n/2026/07/10/subcontract-wip-transfers.html">
+
+
+  <meta property="og:description" content="Analizamos cómo Business Central gestiona las transferencias WIP entre subcontratistas, qué requisitos exige y qué beneficios aporta a fabricantes, partners y consultores.">
+
+
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2026-07-10T00:00:00+02:00">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/dynamics%20365%20business%20central/fabricaci%C3%B3n/subcontrataci%C3%B3n/2026/07/10/subcontract-wip-transfers.html">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Marcelino Pacheco Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    
+<nav class="skip-links" aria-label="Skip links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Saltar a navegación principal</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Saltar a contenido</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Saltar a pie</a></li>
+  </ul>
+</nav>
+
+    
+
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
+        
+        <a class="site-title" href="/">
+          Marcelino Pacheco
+          <span class="site-subtitle">Cacharreando un poco con BC</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/"
+                
+                
+              >Inicio</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/categories/"
+                
+                
+              >Categorías</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/tags/"
+                
+                
+              >Etiquetas</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/about/"
+                
+                
+              >Sobre mí</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Alternar menú</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+
+
+<div id="main" role="main">
+  
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url"></a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>Consultor certificado en Dynamics 365 Business Central</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Seguir</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-location-dot" aria-hidden="true"></i> <span itemprop="name" class="p-locality">España</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://www.linkedin.com/in/TU_USUARIO" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/mpachecodynamizatic" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Transferencias WIP entre subcontratistas en Business Central: control real del producto semiterminado">
+    <meta itemprop="description" content="En los entornos de fabricación en los que intervienen varios terceros, el producto semiterminado rara vez permanece estático. Puede salir del almacén propio, pasar por distintos subcontratistas y volver a la empresa para continuar o finalizar su proceso productivo. Este movimiento físico plantea una cuestión clave: ¿cómo registrar el desplazamiento del trabajo en curso sin tratarlo como si fuera un stock convencional?">
+    <meta itemprop="datePublished" content="2026-07-10T00:00:00+02:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/dynamics%20365%20business%20central/fabricaci%C3%B3n/subcontrataci%C3%B3n/2026/07/10/subcontract-wip-transfers.html" itemprop="url">Transferencias WIP entre subcontratistas en Business Central: control real del producto semiterminado
+</a>
+          </h1>
+          
+
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          8 minuto(s) de lectura
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc" aria-label="Table of contents">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> En esta página</h4></header>
+              <ul class="toc__menu"><li><a href="#qué-es">Qué es</a></li><li><a href="#principales-características">Principales características</a></li><li><a href="#beneficios-para-las-empresas">Beneficios para las empresas</a><ul><li><a href="#1-trazabilidad-más-fiel-al-proceso-real">1. Trazabilidad más fiel al proceso real</a></li><li><a href="#2-menos-distorsiones-contables">2. Menos distorsiones contables</a></li><li><a href="#3-mayor-control-en-entornos-complejos">3. Mayor control en entornos complejos</a></li><li><a href="#4-soporte-para-correcciones-operativas">4. Soporte para correcciones operativas</a></li></ul></li><li><a href="#beneficios-para-partners-y-consultores">Beneficios para partners y consultores</a></li><li><a href="#casos-de-uso">Casos de uso</a><ul><li><a href="#subcontratación-secuencial-de-varias-operaciones">Subcontratación secuencial de varias operaciones</a></li><li><a href="#envío-inicial-desde-almacén-propio-al-primer-proveedor">Envío inicial desde almacén propio al primer proveedor</a></li><li><a href="#movimiento-entre-subcontratistas">Movimiento entre subcontratistas</a></li><li><a href="#retorno-del-producto-semiterminado-a-la-empresa">Retorno del producto semiterminado a la empresa</a></li><li><a href="#ajuste-de-discrepancias-y-cierre-de-orden">Ajuste de discrepancias y cierre de orden</a></li></ul></li><li><a href="#requisitos-y-configuración">Requisitos y configuración</a><ul><li><a href="#1-ruta-de-fabricación">1. Ruta de fabricación</a></li><li><a href="#2-proveedor-y-ubicación-de-subcontratación">2. Proveedor y ubicación de subcontratación</a></li><li><a href="#3-rutas-de-transferencia">3. Rutas de transferencia</a></li><li><a href="#4-pedido-de-compra-de-subcontratación">4. Pedido de compra de subcontratación</a></li><li><a href="#5-gobierno-de-almacén-y-restricciones">5. Gobierno de almacén y restricciones</a></li></ul></li><li><a href="#buenas-prácticas">Buenas prácticas</a></li><li><a href="#checklist-de-implantación">Checklist de implantación</a></li><li><a href="#resumen-de-funcionalidades">Resumen de funcionalidades</a></li><li><a href="#conclusiones">Conclusiones</a></li><li><a href="#referencias">Referencias</a></li></ul>
+            </nav>
+          </aside>
+        
+        <p>En los entornos de fabricación en los que intervienen varios terceros, el producto semiterminado rara vez permanece estático. Puede salir del almacén propio, pasar por distintos subcontratistas y volver a la empresa para continuar o finalizar su proceso productivo. Este movimiento físico plantea una cuestión clave: ¿cómo registrar el desplazamiento del trabajo en curso sin tratarlo como si fuera un stock convencional?</p>
+
+<p>La funcionalidad de transferencias WIP entre subcontratistas en Dynamics 365 Business Central responde precisamente a ese reto. Su objetivo es documentar el movimiento del producto en curso entre ubicaciones de subcontratación o entre la planta propia y el proveedor externo, manteniendo al mismo tiempo la lógica financiera y operativa del pedido de producción.</p>
+
+<p>Para fabricantes con procesos complejos, esta capacidad supone una mejora relevante en trazabilidad, control operativo y coherencia de costes. También abre nuevas oportunidades para partners y consultores que trabajan en escenarios de producción avanzada, multioperación y logística externa.</p>
+
+<h2 id="qué-es">Qué es</h2>
+
+<p>Una transferencia WIP (Work in Progress) en Business Central representa el movimiento del artículo principal de una orden de producción mientras aún está en proceso. En lugar de registrar ese movimiento como una transferencia de inventario estándar, la solución lo trata como parte del flujo productivo del pedido.</p>
+
+<p>Esto es importante porque el producto semiterminado no se considera un artículo independiente que cambie de valoración cada vez que se mueve. Sigue bajo el paraguas de costes de la orden de producción. Por eso, al contabilizar una transferencia WIP no se generan movimientos estándar de producto, valor o almacén; el seguimiento se realiza en un registro específico de WIP de subcontratación.</p>
+
+<p>La funcionalidad está pensada para escenarios de subcontratación en varias etapas, incluyendo movimientos entre subcontratista y subcontratista. De esta forma, Business Central refleja mejor la realidad operativa sin forzar procesos de inventario que no corresponden al contexto del producto en curso.</p>
+
+<h2 id="principales-características">Principales características</h2>
+
+<p>Las transferencias WIP se activan desde la ruta de fabricación mediante un indicador específico en la línea de operación subcontratada. Ese enfoque evita duplicar líneas o modelados artificiales del proceso. La propia línea de ruta controla cuándo una operación debe provocar el traslado del producto semiterminado.</p>
+
+<p>Entre sus capacidades más destacadas se encuentran:</p>
+
+<ul>
+  <li>Uso de pedidos de transferencia para documentar envíos y recepciones del WIP.</li>
+  <li>Registro del movimiento en un libro específico de WIP de subcontratación.</li>
+  <li>Cálculo automático de ubicaciones de origen y destino según la fase del proceso.</li>
+  <li>Determinación de cantidades iniciales y posteriores basada en la orden de producción o en el saldo WIP existente.</li>
+  <li>Compatibilidad con escenarios de subcontratación en múltiples fases.</li>
+  <li>Posibilidad de ajustar manualmente cantidades WIP cuando existen discrepancias.</li>
+  <li>Opción de limpieza automática del WIP restante al finalizar la orden de producción.</li>
+</ul>
+
+<p>Además, Business Central permite definir descripciones específicas por operación, algo útil cuando el mismo artículo principal atraviesa varias etapas y conviene identificar el grado de avance que se está transfiriendo.</p>
+
+<h2 id="beneficios-para-las-empresas">Beneficios para las empresas</h2>
+
+<p>Desde una perspectiva empresarial, esta funcionalidad aporta tres ventajas claras: mayor visibilidad del flujo físico, mejor alineación entre operaciones y costes, y menor riesgo de inconsistencias en producción.</p>
+
+<h3 id="1-trazabilidad-más-fiel-al-proceso-real">1. Trazabilidad más fiel al proceso real</h3>
+<p>Las empresas pueden saber dónde se encuentra el producto semiterminado en cada fase: en tránsito, en el subcontratista actual o pendiente de retorno. Esto mejora el seguimiento del pedido y facilita la coordinación entre producción, compras y logística.</p>
+
+<h3 id="2-menos-distorsiones-contables">2. Menos distorsiones contables</h3>
+<p>Al no convertir el WIP en movimientos estándar de inventario, se evita mezclar un tránsito productivo con una transacción de stock tradicional. El sistema mantiene el coste bajo la orden de producción, lo que ofrece una lectura más coherente del proceso.</p>
+
+<h3 id="3-mayor-control-en-entornos-complejos">3. Mayor control en entornos complejos</h3>
+<p>Cuando existen operaciones paralelas, movimientos entre varios proveedores o necesidades de devolución, el sistema conserva una lógica unificada de seguimiento. Esto reduce el uso de controles manuales y mejora la capacidad de auditoría.</p>
+
+<h3 id="4-soporte-para-correcciones-operativas">4. Soporte para correcciones operativas</h3>
+<p>Si el stock físico no coincide con el registrado, se pueden realizar ajustes del WIP sin alterar el diseño del flujo productivo. También es posible limpiar cantidades sobrantes al cerrar la orden, lo que ayuda a dejar el sistema en un estado consistente.</p>
+
+<h2 id="beneficios-para-partners-y-consultores">Beneficios para partners y consultores</h2>
+
+<p>Para partners y consultores de Business Central, las transferencias WIP entre subcontratistas representan una funcionalidad con alto valor en proyectos industriales.</p>
+
+<ul>
+  <li>Permiten diseñar soluciones más cercanas al proceso real del cliente, especialmente en fabricación por fases.</li>
+  <li>Ayudan a reducir desarrollos ad hoc en escenarios donde antes se recurría a personalizaciones para controlar producto semiterminado fuera de planta.</li>
+  <li>Facilitan conversaciones de preventa y diagnóstico funcional al ofrecer una respuesta clara para la logística del WIP.</li>
+  <li>Abren oportunidades de consultoría en parametrización, rutas, ubicaciones, transfer routes y gobierno de datos de producción.</li>
+  <li>Mejoran la propuesta de valor en implantaciones para sectores con operaciones externas recurrentes, como metal, mecanizado, tratamiento de superficies o ensamblaje especializado.</li>
+</ul>
+
+<p>En términos prácticos, esta funcionalidad puede simplificar el blueprint durante la fase de análisis, porque permite separar mejor qué parte del flujo corresponde a compras, cuál pertenece a producción y cuál debe tratarse como tránsito productivo.</p>
+
+<h2 id="casos-de-uso">Casos de uso</h2>
+
+<h3 id="subcontratación-secuencial-de-varias-operaciones">Subcontratación secuencial de varias operaciones</h3>
+<p>Una empresa envía una pieza a un proveedor para mecanizado, después a un segundo proveedor para tratamiento térmico y finalmente a un tercero para acabado. Business Central permite registrar cada movimiento como parte del WIP sin convertir cada fase en stock estándar.</p>
+
+<h3 id="envío-inicial-desde-almacén-propio-al-primer-proveedor">Envío inicial desde almacén propio al primer proveedor</h3>
+<p>Cuando la primera operación subcontratada empieza fuera de planta, el sistema calcula la transferencia desde la ubicación de la orden de producción hacia la ubicación del subcontratista.</p>
+
+<h3 id="movimiento-entre-subcontratistas">Movimiento entre subcontratistas</h3>
+<p>Si el producto ya está en una ubicación externa y debe pasar a otra operación también subcontratada, el sistema determina el origen a partir del proveedor anterior y genera la transferencia correspondiente.</p>
+
+<h3 id="retorno-del-producto-semiterminado-a-la-empresa">Retorno del producto semiterminado a la empresa</h3>
+<p>Si el WIP necesita volver a la ubicación propia, se pueden generar transferencias de retorno según las cantidades registradas en el libro WIP.</p>
+
+<h3 id="ajuste-de-discrepancias-y-cierre-de-orden">Ajuste de discrepancias y cierre de orden</h3>
+<p>Cuando existe diferencia entre la cantidad física y la registrada, el equipo puede ejecutar ajustes. Al finalizar la orden, también puede realizar una limpieza automática del WIP pendiente.</p>
+
+<h2 id="requisitos-y-configuración">Requisitos y configuración</h2>
+
+<p>Para que la funcionalidad encaje correctamente en una implantación, conviene revisar varios elementos de configuración.</p>
+
+<h3 id="1-ruta-de-fabricación">1. Ruta de fabricación</h3>
+<p>La operación subcontratada debe estar asociada a un centro de trabajo de subcontratación. En esa línea de ruta se activa el indicador de transferencia WIP.</p>
+
+<h3 id="2-proveedor-y-ubicación-de-subcontratación">2. Proveedor y ubicación de subcontratación</h3>
+<p>Cada subcontratista necesita una ubicación asociada en su ficha. La recomendación práctica es definir una ubicación separada para cada proveedor para evitar ambigüedades operativas.</p>
+
+<h3 id="3-rutas-de-transferencia">3. Rutas de transferencia</h3>
+<p>Si se trabaja con tránsito o con configuraciones de almacén avanzadas, es especialmente recomendable definir transfer routes con código in-transit entre ubicaciones propias y externas, tanto a la ida como al retorno.</p>
+
+<h3 id="4-pedido-de-compra-de-subcontratación">4. Pedido de compra de subcontratación</h3>
+<p>La creación de la orden de transferencia WIP parte del pedido de compra de subcontratación. Por tanto, el diseño del ciclo debe contemplar la relación entre orden de producción, compra subcontratada y movimientos logísticos.</p>
+
+<h3 id="5-gobierno-de-almacén-y-restricciones">5. Gobierno de almacén y restricciones</h3>
+<p>Hay restricciones importantes: no se admiten números de serie o lote en líneas WIP, no se generan ciertos documentos de picking o ubicación para estas líneas y algunas combinaciones de almacén requieren especial cuidado al trabajar con transferencias directas.</p>
+
+<h2 id="buenas-prácticas">Buenas prácticas</h2>
+
+<ul>
+  <li>Crear una ubicación específica por subcontratista.</li>
+  <li>Usar rutas de transferencia con ubicación en tránsito cuando existan configuraciones avanzadas de almacén.</li>
+  <li>Revisar que la operación subcontratada no provoque efectos no deseados al contabilizar recepciones si es la última operación del proceso.</li>
+  <li>Definir descripciones de transferencia por operación para diferenciar etapas del producto.</li>
+  <li>Establecer un procedimiento de conciliación periódica entre saldo WIP físico y saldo WIP registrado.</li>
+  <li>Formar al equipo de producción, compras y logística sobre la diferencia entre transferencia estándar y transferencia WIP.</li>
+  <li>Probar escenarios de retorno, operaciones paralelas y cierre de orden antes del arranque.</li>
+</ul>
+
+<h2 id="checklist-de-implantación">Checklist de implantación</h2>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Confirmar que el proceso del cliente requiere seguimiento del producto semiterminado entre terceros.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Identificar operaciones subcontratadas en la ruta de fabricación.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Asignar centros de trabajo de subcontratación y proveedores.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Crear una ubicación de subcontratación por proveedor.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Configurar transfer routes con in-transit cuando aplique.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Activar la opción de transferencia WIP en las operaciones correspondientes.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Validar la generación de pedidos de compra de subcontratación.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Probar transferencias desde planta, entre subcontratistas y de retorno.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Verificar ajustes manuales de WIP.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Definir criterio de limpieza WIP al finalizar órdenes.</li>
+</ul>
+
+<h2 id="resumen-de-funcionalidades">Resumen de funcionalidades</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Funcionalidad</th>
+      <th>Beneficio</th>
+      <th>Impacto</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Transferencia WIP desde pedido de compra subcontratado</td>
+      <td>Conecta compras, producción y logística</td>
+      <td>Reduce pasos manuales</td>
+    </tr>
+    <tr>
+      <td>Libro específico de WIP</td>
+      <td>Separa el seguimiento operativo del inventario estándar</td>
+      <td>Mejora la coherencia de costes</td>
+    </tr>
+    <tr>
+      <td>Cálculo automático de ubicaciones</td>
+      <td>Agiliza movimientos entre fases y proveedores</td>
+      <td>Menos errores operativos</td>
+    </tr>
+    <tr>
+      <td>Ajuste manual de cantidades</td>
+      <td>Permite corregir discrepancias</td>
+      <td>Mayor fiabilidad del dato</td>
+    </tr>
+    <tr>
+      <td>Limpieza WIP al cierre</td>
+      <td>Evita saldos pendientes al finalizar</td>
+      <td>Mejora el cierre de producción</td>
+    </tr>
+    <tr>
+      <td>Soporte multi-stage subcontracting</td>
+      <td>Da cobertura a procesos industriales complejos</td>
+      <td>Escalabilidad funcional</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="conclusiones">Conclusiones</h2>
+
+<p>La nueva gestión de transferencias WIP entre subcontratistas en Business Central responde a una necesidad muy concreta de los fabricantes: controlar el producto semiterminado cuando sale de la planta, sin desvirtuar su naturaleza como parte de una orden de producción.</p>
+
+<p>Su valor no está solo en registrar movimientos, sino en hacerlo con una lógica funcional más precisa. Esto ayuda a alinear el mundo físico del taller, la logística externa y el control económico del proceso productivo.</p>
+
+<p>Para empresas industriales, la funcionalidad aporta trazabilidad y orden. Para partners y consultores, ofrece una pieza sólida para construir soluciones de fabricación más maduras y menos dependientes de desarrollos a medida. Y para el usuario final, simplifica la operativa diaria en escenarios donde el WIP ya no puede gestionarse con simples notas o controles externos.</p>
+
+<p>En definitiva, estamos ante una mejora especialmente relevante para organizaciones que trabajan con subcontratación por fases y necesitan gobernar con rigor el flujo del producto en curso.</p>
+
+<h2 id="referencias">Referencias</h2>
+
+<p>Fuente original:</p>
+
+<p><a href="https://learn.microsoft.com/en-us/dynamics365/business-central/subcontract-wip-transfers">https://learn.microsoft.com/en-us/dynamics365/business-central/subcontract-wip-transfers</a></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+  
+    
+
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Etiquetas: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#business-central" class="page__taxonomy-item p-category" rel="tag">business central</a><span class="sep">, </span>
+    
+      <a href="/tags/#fabricaci%C3%B3n" class="page__taxonomy-item p-category" rel="tag">fabricación</a><span class="sep">, </span>
+    
+      <a href="/tags/#microsoft" class="page__taxonomy-item p-category" rel="tag">microsoft</a><span class="sep">, </span>
+    
+      <a href="/tags/#subcontracting" class="page__taxonomy-item p-category" rel="tag">subcontracting</a><span class="sep">, </span>
+    
+      <a href="/tags/#supply-chain" class="page__taxonomy-item p-category" rel="tag">supply chain</a><span class="sep">, </span>
+    
+      <a href="/tags/#transfer-orders" class="page__taxonomy-item p-category" rel="tag">transfer orders</a><span class="sep">, </span>
+    
+      <a href="/tags/#wip" class="page__taxonomy-item p-category" rel="tag">wip</a><span class="sep">, </span>
+    
+      <a href="/tags/#work-in-progress" class="page__taxonomy-item p-category" rel="tag">work in progress</a>
+    
+    </span>
+  </p>
+
+
+  
+
+  
+    
+
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categorías: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#dynamics-365-business-central" class="page__taxonomy-item p-category" rel="tag">Dynamics 365 Business Central</a><span class="sep">, </span>
+    
+      <a href="/categories/#fabricaci%C3%B3n" class="page__taxonomy-item p-category" rel="tag">Fabricación</a><span class="sep">, </span>
+    
+      <a href="/categories/#subcontrataci%C3%B3n" class="page__taxonomy-item p-category" rel="tag">Subcontratación</a>
+    
+    </span>
+  </p>
+
+
+  
+
+
+        
+
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Actualizado:</strong> <time class="dt-published" datetime="2026-07-10T00:00:00+02:00">July 10, 2026</time></p>
+
+
+      </footer>
+
+      
+<section class="page__share">
+  <h4 class="page__share-title">Compartir en</h4>
+
+  <a href="https://x.com/intent/tweet?text=Transferencias+WIP+entre+subcontratistas+en+Business+Central%3A+control+real+del+producto+semiterminado%20http%3A%2F%2Flocalhost%3A4000%2Fdynamics%2520365%2520business%2520central%2Ffabricaci%25C3%25B3n%2Fsubcontrataci%25C3%25B3n%2F2026%2F07%2F10%2Fsubcontract-wip-transfers.html" class="btn btn--x" aria-label="Share on X" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir en X">
+    <i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i><span> X</span>
+  </a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fdynamics%2520365%2520business%2520central%2Ffabricaci%25C3%25B3n%2Fsubcontrataci%25C3%25B3n%2F2026%2F07%2F10%2Fsubcontract-wip-transfers.html" class="btn btn--facebook" aria-label="Share on Facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir en Facebook">
+    <i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span>
+  </a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/dynamics%20365%20business%20central/fabricaci%C3%B3n/subcontrataci%C3%B3n/2026/07/10/subcontract-wip-transfers.html" class="btn btn--linkedin" aria-label="Share on LinkedIn" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir en LinkedIn">
+    <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span>
+  </a>
+
+  <a href="https://bsky.app/intent/compose?text=Transferencias+WIP+entre+subcontratistas+en+Business+Central%3A+control+real+del+producto+semiterminado%20http%3A%2F%2Flocalhost%3A4000%2Fdynamics%2520365%2520business%2520central%2Ffabricaci%25C3%25B3n%2Fsubcontrataci%25C3%25B3n%2F2026%2F07%2F10%2Fsubcontract-wip-transfers.html" class="btn btn--bluesky" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir en Bluesky">
+    <i class="fab fa-fw fa-bluesky" aria-hidden="true"></i><span> Bluesky</span>
+  </a>
+</section>
+
+
+      
+
+  <nav class="pagination" aria-label="Post pagination">
+    
+      <a href="/business%20intelligence/dynamics%20365/power%20bi/2026/07/10/powerbi-manufacturing.html" class="pagination--pager" title="Power BI Manufacturing en Business Central: modelo semántico para optimizar la producción">Anterior</a>
+    
+    
+      <a href="/dynamics%20365%20business%20central/sostenibilidad/esg/2026/07/10/sustainability-certificates.html" class="pagination--pager" title="Sustainability Certificates en Dynamics 365 Business Central">Siguiente</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    
+
+<div class="page__related">
+  
+  <h2 class="page__related-title">Puede que también te interese</h2>
+  <div class="grid__wrapper">
+    
+      
+      
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/posts/sustainability-certificates/01-portada.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/dynamics%20365%20business%20central/sostenibilidad/esg/2026/07/10/sustainability-certificates.html" rel="permalink">Sustainability Certificates en Dynamics 365 Business Central
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          8 minuto(s) de lectura
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt p-summary" itemprop="description">Guía práctica para entender y comunicar cómo Dynamics 365 Business Central permite crear, clasificar y asignar certificados de sostenibilidad a proveedores y...</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/business%20intelligence/dynamics%20365/power%20bi/2026/07/10/powerbi-manufacturing.html" rel="permalink">Power BI Manufacturing en Business Central: modelo semántico para optimizar la producción
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          9 minuto(s) de lectura
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt p-summary" itemprop="description">La analítica de fabricación ya no consiste solo en consultar informes históricos. En las organizaciones que trabajan con Dynamics 365 Business Central, el va...</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/posts/inventory-how-transfer-between-locations/01-portada.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/dynamics%20365/business%20central/inventario/2026/07/10/inventory-how-transfer-between-locations.html" rel="permalink">Cómo transferir inventario entre ubicaciones en Business Central
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minuto(s) de lectura
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt p-summary" itemprop="description">Aprende a gestionar transferencias de inventario entre almacenes en Business Central mediante órdenes de transferencia y diarios de reclasificación.
+</p>
+  </article>
+</div>
+
+    
+  </div>
+</div>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Seguir:</strong></li>
+    
+
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-square-rss" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2026 <a href="http://localhost:4000">Marcelino Pacheco</a>. Funciona con <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

@@ -1,7 +1,10 @@
 # ==============================================
 #  TEMA
 # ==============================================
-remote_theme: mmistakes/minimal-mistakes
+# LOCAL: usa 'theme' (gema local, más rápido)
+theme: minimal-mistakes-jekyll
+# PRODUCCIÓN (GitHub Pages): comenta 'theme' y descomenta 'remote_theme'
+# remote_theme: mmistakes/minimal-mistakes
 minimal_mistakes_skin: "air"   # opciones: air, aqua, contrast, dark, dirt, neon, mint, plum, sunrise
 
 # ==============================================
@@ -21,7 +24,6 @@ timezone: "Europe/Madrid"
 #  AUTOR
 # ==============================================
 author:
-  name: "Marcelino Pacheco"
   bio: "Consultor certificado en Dynamics 365 Business Central"
   location: "España"
   # avatar: "/assets/images/avatar.jpg"   # descomenta y añade tu foto
@@ -63,6 +65,12 @@ defaults:
       author_profile: true
 
 # ==============================================
+#  COLECCIONES
+# ==============================================
+include:
+  - _pages
+
+# ==============================================
 #  PAGINACIÓN
 # ==============================================
 paginate: 5
@@ -72,7 +80,7 @@ paginate_path: /page:num/
 #  PLUGINS
 # ==============================================
 plugins:
-  - jekyll-remote-theme
+  # - jekyll-remote-theme  # solo necesario con remote_theme (GitHub Pages)
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist

@@ -1,9 +1,9 @@
 main:
   - title: "Inicio"
     url: /
-  - title: "Business Central"
-    url: /categories/business-central/
-  - title: "Power BI"
-    url: /categories/power-bi/
+  - title: "Categorías"
+    url: /categories/
+  - title: "Etiquetas"
+    url: /tags/
   - title: "Sobre mí"
     url: /about/

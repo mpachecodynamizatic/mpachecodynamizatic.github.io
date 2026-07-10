@@ -1,0 +1,16 @@
+🌱 La sostenibilidad útil no es la que se declara. Es la que se puede demostrar.
+
+Dynamics 365 Business Central incorpora la funcionalidad **Sustainability Certificates**, con la que es posible registrar certificados de sostenibilidad para **proveedores** y **artículos**, clasificarlos por **área** y **estándar**, indicar **emisor** y **valor**, y asociarlos directamente a los datos maestros.
+
+¿Qué aporta esto en la práctica?
+
+✅ Más trazabilidad en compras y producto  
+✅ Mejor soporte para auditorías y reporting  
+✅ Un dato ESG más estructurado dentro del ERP  
+✅ Mejor preparación para escenarios como **Digital Product Passport**
+
+Además, Business Central incorpora campos en artículo para capturar información como reciclabilidad, eficiencia energética y fin de vida del producto.
+
+No hablamos solo de sostenibilidad. Hablamos de convertirla en un proceso operativo, verificable y escalable.
+
+#BusinessCentral #Dynamics365 #Sostenibilidad #ESG #ERP #SupplyChain #DigitalProductPassport #Microsoft #sustainabilitycertificates

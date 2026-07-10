@@ -1,0 +1,33 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+search: false
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+/* ==========================================================================
+   Custom overrides — ancho del sitio al 90% de la pantalla
+   ========================================================================== */
+
+/* Contenido principal */
+#main {
+  max-width: 90vw !important;
+}
+
+/* Barra de navegación superior */
+.masthead__inner-wrap {
+  max-width: 90vw !important;
+}
+
+/* Cabecera hero con overlay */
+.page__hero--overlay .wrapper {
+  max-width: 90vw !important;
+}
+
+/* Pie de página */
+.page__footer .wrapper {
+  max-width: 90vw !important;
+}

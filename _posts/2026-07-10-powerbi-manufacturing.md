@@ -7,12 +7,8 @@ description: "Descubre cómo el modelo semántico de Power BI Manufacturing en B
 image:
   path: 01-portada.png
   alt: "Portada corporativa sobre Power BI Manufacturing en Business Central con paneles analíticos y entorno industrial."
-media_subpath: /assets/img/posts/powerbi-manufacturing/
+media_subpath: /assets/posts/powerbi-manufacturing/
 ---
-
-# Power BI Manufacturing en Business Central: modelo semántico para optimizar la producción
-
-## Introducción
 
 La analítica de fabricación ya no consiste solo en consultar informes históricos. En las organizaciones que trabajan con Dynamics 365 Business Central, el valor real aparece cuando las operaciones de planta, los costes y la capacidad se convierten en una capa analítica coherente, reutilizable y comprensible para perfiles de negocio y de operaciones. Ahí es donde entra en juego el modelo semántico de Power BI Manufacturing.
 

@@ -1,0 +1,848 @@
+
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.28.0 by Michael Rose
+  Copyright 2013-2026 Michael Rose - mademistakes.com | @mmistakes
+  Copyright 2024-2026 iBug - ibugone.com | @iBug
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="es-ES" class="no-js">
+  <head>
+    
+<meta charset="utf-8">
+
+
+<!-- begin _includes/seo.html --><title>Power BI Manufacturing en Business Central: modelo semántico para optimizar la producción | Marcelino Pacheco</title>
+<meta name="description" content="Descubre cómo el modelo semántico de Power BI Manufacturing en Business Central organiza datos de producción en un esquema en estrella para mejorar análisis, visibilidad y toma de decisiones.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="Marcelino Pacheco">
+<meta property="og:title" content="Power BI Manufacturing en Business Central: modelo semántico para optimizar la producción">
+<meta property="og:url" content="http://localhost:4000/business%20intelligence/dynamics%20365/power%20bi/2026/07/10/powerbi-manufacturing.html">
+
+
+  <meta property="og:description" content="Descubre cómo el modelo semántico de Power BI Manufacturing en Business Central organiza datos de producción en un esquema en estrella para mejorar análisis, visibilidad y toma de decisiones.">
+
+
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2026-07-10T00:00:00+02:00">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/business%20intelligence/dynamics%20365/power%20bi/2026/07/10/powerbi-manufacturing.html">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Marcelino Pacheco Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    
+<nav class="skip-links" aria-label="Skip links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Saltar a navegación principal</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Saltar a contenido</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Saltar a pie</a></li>
+  </ul>
+</nav>
+
+    
+
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
+        
+        <a class="site-title" href="/">
+          Marcelino Pacheco
+          <span class="site-subtitle">Cacharreando un poco con BC</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/"
+                
+                
+              >Inicio</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/categories/"
+                
+                
+              >Categorías</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/tags/"
+                
+                
+              >Etiquetas</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/about/"
+                
+                
+              >Sobre mí</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Alternar menú</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+
+
+<div id="main" role="main">
+  
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url"></a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>Consultor certificado en Dynamics 365 Business Central</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Seguir</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-location-dot" aria-hidden="true"></i> <span itemprop="name" class="p-locality">España</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://www.linkedin.com/in/TU_USUARIO" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/mpachecodynamizatic" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Power BI Manufacturing en Business Central: modelo semántico para optimizar la producción">
+    <meta itemprop="description" content="La analítica de fabricación ya no consiste solo en consultar informes históricos. En las organizaciones que trabajan con Dynamics 365 Business Central, el valor real aparece cuando las operaciones de planta, los costes y la capacidad se convierten en una capa analítica coherente, reutilizable y comprensible para perfiles de negocio y de operaciones. Ahí es donde entra en juego el modelo semántico de Power BI Manufacturing.">
+    <meta itemprop="datePublished" content="2026-07-10T00:00:00+02:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/business%20intelligence/dynamics%20365/power%20bi/2026/07/10/powerbi-manufacturing.html" itemprop="url">Power BI Manufacturing en Business Central: modelo semántico para optimizar la producción
+</a>
+          </h1>
+          
+
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          9 minuto(s) de lectura
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc" aria-label="Table of contents">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> En esta página</h4></header>
+              <ul class="toc__menu"><li><a href="#qué-es">Qué es</a></li><li><a href="#principales-características">Principales características</a><ul><li><a href="#1-estructura-analítica-basada-en-estrella">1) Estructura analítica basada en estrella</a></li><li><a href="#2-hechos-orientados-a-operaciones-reales-de-fabricación">2) Hechos orientados a operaciones reales de fabricación</a></li><li><a href="#3-dimensiones-con-contexto-de-negocio">3) Dimensiones con contexto de negocio</a></li><li><a href="#4-integración-con-la-app-estándar-de-power-bi">4) Integración con la app estándar de Power BI</a></li><li><a href="#5-preparado-para-distintos-perfiles-de-usuario">5) Preparado para distintos perfiles de usuario</a></li></ul></li><li><a href="#beneficios-para-las-empresas">Beneficios para las empresas</a><ul><li><a href="#más-visibilidad-sobre-la-planta">Más visibilidad sobre la planta</a></li><li><a href="#decisiones-más-rápidas-y-mejor-fundamentadas">Decisiones más rápidas y mejor fundamentadas</a></li><li><a href="#mejor-lectura-de-capacidad-y-cuellos-de-botella">Mejor lectura de capacidad y cuellos de botella</a></li><li><a href="#control-más-completo-de-costes-industriales">Control más completo de costes industriales</a></li><li><a href="#base-común-para-escalabilidad-analítica">Base común para escalabilidad analítica</a></li></ul></li><li><a href="#beneficios-para-partners-y-consultores">Beneficios para partners y consultores</a></li><li><a href="#casos-de-uso">Casos de uso</a></li><li><a href="#requisitos-y-configuración">Requisitos y configuración</a></li><li><a href="#buenas-prácticas">Buenas prácticas</a></li><li><a href="#checklist-de-implantación">Checklist de implantación</a></li><li><a href="#resumen-de-funcionalidades">Resumen de funcionalidades</a></li><li><a href="#conclusiones">Conclusiones</a></li><li><a href="#referencias">Referencias</a></li></ul>
+            </nav>
+          </aside>
+        
+        <p>La analítica de fabricación ya no consiste solo en consultar informes históricos. En las organizaciones que trabajan con Dynamics 365 Business Central, el valor real aparece cuando las operaciones de planta, los costes y la capacidad se convierten en una capa analítica coherente, reutilizable y comprensible para perfiles de negocio y de operaciones. Ahí es donde entra en juego el modelo semántico de Power BI Manufacturing.</p>
+
+<p>La documentación de Microsoft para la app de Manufacturing describe un <strong>modelo en estrella</strong> que separa claramente hechos y dimensiones. Ese detalle, que puede parecer técnico, tiene un impacto directo en la calidad del análisis: facilita la agregación, mejora la navegación por filtros y ayuda a construir una única capa de verdad para cuadros de mando, informes departamentales y visualizaciones ejecutivas.</p>
+
+<p>Además, la app de Power BI para fabricación no se plantea como una simple colección de gráficos. Microsoft la presenta como una solución orientada a distintos perfiles: dirección, mandos intermedios y supervisión operativa. El resultado es una base muy útil para compañías industriales que quieren evolucionar desde el reporting descriptivo hacia un análisis operacional más accionable.</p>
+
+<h2 id="qué-es">Qué es</h2>
+
+<p>El modelo semántico de Power BI Manufacturing para Business Central es la capa analítica que organiza la información de fabricación en una estructura preparada para Power BI. Según la documentación oficial, el modelo se construye con un <strong>esquema de estrella</strong>, una aproximación conocida por simplificar el análisis y separar dos grandes bloques de información:</p>
+
+<ul>
+  <li><strong>Tablas de hechos</strong>, donde viven los datos transaccionales.</li>
+  <li><strong>Tablas de dimensiones</strong>, que aportan contexto para segmentar, agrupar y analizar.</li>
+</ul>
+
+<p>En este caso, Microsoft destaca como hechos varias entidades clave de fabricación: entradas de calendario, movimientos de capacidad, movimientos de producto, necesidad de capacidad de órdenes de producción, componentes, líneas de ruta, líneas de pedido de producción y entradas de valor. En paralelo, el modelo añade dimensiones como producto, categoría de producto, ubicación, centro de máquina, órdenes de producción, routing, centro de trabajo y grupo de centro de trabajo.</p>
+
+<p>Traducido al lenguaje de negocio: el modelo convierte trazas operativas dispersas en una gramática analítica común. Eso permite responder con más claridad a preguntas como qué centros consumen más capacidad, dónde se concentran los cuellos de botella, qué productos acumulan más coste o cómo evoluciona la carga de producción.</p>
+
+<h2 id="principales-características">Principales características</h2>
+
+<h3 id="1-estructura-analítica-basada-en-estrella">1) Estructura analítica basada en estrella</h3>
+<p>La primera gran característica es su organización en un <strong>star schema</strong>. Esta arquitectura favorece modelos más entendibles, filtros más lógicos y una lectura de indicadores más consistente. En entornos industriales, donde conviven capacidad, producción, rutas, ubicaciones y costes, esta claridad es especialmente valiosa.</p>
+
+<h3 id="2-hechos-orientados-a-operaciones-reales-de-fabricación">2) Hechos orientados a operaciones reales de fabricación</h3>
+<p>Las tablas de hechos cubren los principales eventos transaccionales del ciclo productivo. Entre los ejemplos documentados por Microsoft aparecen:</p>
+
+<ul>
+  <li>Entradas de calendario.</li>
+  <li>Entradas del libro de contabilidad de capacidad.</li>
+  <li>Movimientos de producto.</li>
+  <li>Necesidades de capacidad de órdenes de producción.</li>
+  <li>Componentes de órdenes de producción.</li>
+  <li>Líneas de ruta de órdenes de producción.</li>
+  <li>Líneas de pedido de producción.</li>
+  <li>Entradas de valor.</li>
+</ul>
+
+<p>Esto permite analizar productividad, consumo, utilización, secuencias operativas y costes desde una misma base analítica.</p>
+
+<h3 id="3-dimensiones-con-contexto-de-negocio">3) Dimensiones con contexto de negocio</h3>
+<p>Las dimensiones enriquecen el análisis con atributos como artículo, categoría, ubicación, centro de máquina, orden de producción, routing o centro de trabajo. El beneficio práctico es claro: no se trata solo de sumar movimientos, sino de entender <strong>dónde</strong>, <strong>sobre qué producto</strong>, <strong>en qué ruta</strong>, <strong>en qué centro</strong> y <strong>en qué periodo</strong> suceden esos movimientos.</p>
+
+<h3 id="4-integración-con-la-app-estándar-de-power-bi">4) Integración con la app estándar de Power BI</h3>
+<p>La documentación de instalación de Microsoft indica que las apps de Power BI para Business Central combinan un conector AL, modelos semánticos, informes y páginas embebidas en Business Central. Es decir, no estamos ante un activo aislado, sino ante una solución lista para conectarse al entorno funcional de la aplicación.</p>
+
+<h3 id="5-preparado-para-distintos-perfiles-de-usuario">5) Preparado para distintos perfiles de usuario</h3>
+<p>La descripción general de la app de Manufacturing añade otro matiz importante: los informes están planteados para liderazgo, gestión y supervisión operativa. Entre los escenarios citados figuran el análisis de utilización actual e histórica, la carga de centros de trabajo, el desglose de órdenes terminadas, tiempos medios de producción y horas asignadas.</p>
+
+<h2 id="beneficios-para-las-empresas">Beneficios para las empresas</h2>
+
+<h3 id="más-visibilidad-sobre-la-planta">Más visibilidad sobre la planta</h3>
+<p>Cuando producción, capacidad y costes pasan a una capa semántica bien estructurada, la visibilidad mejora de forma notable. Los equipos pueden consultar dónde se concentra la carga, si existen desviaciones recurrentes o qué áreas acumulan más presión productiva.</p>
+
+<h3 id="decisiones-más-rápidas-y-mejor-fundamentadas">Decisiones más rápidas y mejor fundamentadas</h3>
+<p>Un modelo estándar reduce el tiempo que se pierde reinterpretando datos o discutiendo definiciones. Si la lógica analítica está ya organizada, la conversación cambia: deja de centrarse en “qué significa el dato” y pasa a centrarse en “qué decisión conviene tomar”.</p>
+
+<h3 id="mejor-lectura-de-capacidad-y-cuellos-de-botella">Mejor lectura de capacidad y cuellos de botella</h3>
+<p>La propia descripción de la app destaca análisis como Current Utilization, Historical Utilization o Work Center Load. Este enfoque ayuda a identificar saturaciones, infrautilización o desequilibrios entre centros de trabajo con mayor rapidez.</p>
+
+<h3 id="control-más-completo-de-costes-industriales">Control más completo de costes industriales</h3>
+<p>La existencia de entradas de valor y datos de capacidad dentro del modelo aporta una base sólida para relacionar esfuerzo productivo y coste. Para muchas empresas, este punto es decisivo: no basta con producir, hay que producir con rentabilidad y con información trazable.</p>
+
+<h3 id="base-común-para-escalabilidad-analítica">Base común para escalabilidad analítica</h3>
+<p>Adoptar un modelo semántico estándar también ayuda a crecer. Es más fácil extender informes, crear dashboards adaptados por rol o desarrollar analítica adicional cuando la estructura raíz ya está ordenada.</p>
+
+<h2 id="beneficios-para-partners-y-consultores">Beneficios para partners y consultores</h2>
+
+<p>Para partners, integradores y consultores de Business Central, este modelo reduce el trabajo de partir de cero. En lugar de diseñar todo el vocabulario analítico desde una hoja en blanco, pueden apoyarse en una estructura documentada por Microsoft.</p>
+
+<p>Eso genera varias ventajas:</p>
+
+<ul>
+  <li><strong>Aceleración del arranque del proyecto</strong>: hay una base funcional y documental clara.</li>
+  <li><strong>Menor riesgo de inconsistencias</strong>: las entidades principales ya están alineadas con Business Central.</li>
+  <li><strong>Más tiempo para aportar valor</strong>: el esfuerzo puede desplazarse desde el modelado básico hacia la adaptación al negocio, el gobierno del dato y la adopción por parte del usuario.</li>
+  <li><strong>Mayor capacidad de personalización controlada</strong>: Microsoft recomienda gobernar los workspaces y trabajar con copias o versiones personalizadas de informes para no perder cambios al actualizar plantillas.</li>
+</ul>
+
+<p>En proyectos donde el cliente necesita resultados rápidos, esta combinación entre estándar y extensión controlada puede marcar la diferencia.</p>
+
+<h2 id="casos-de-uso">Casos de uso</h2>
+
+<p>A partir de la documentación consultada, hay varios escenarios especialmente claros:</p>
+
+<ol>
+  <li>
+    <p><strong>Seguimiento de la utilización actual e histórica</strong>
+Ideal para detectar saturación en recursos, diferencias entre centros y tendencias operativas.</p>
+  </li>
+  <li>
+    <p><strong>Análisis de carga por centro de trabajo</strong>
+Útil para revisar equilibrio de recursos y valorar redistribuciones de carga o ajustes de planificación.</p>
+  </li>
+  <li>
+    <p><strong>Evaluación de órdenes de producción terminadas</strong>
+Permite estudiar tiempos medios, breakdowns y comportamiento de órdenes cerradas para detectar oportunidades de mejora.</p>
+  </li>
+  <li>
+    <p><strong>Control de horas asignadas</strong>
+Relevante para identificar picos inesperados de dedicación, revisar cargas de recursos y dimensionar mejor la operación.</p>
+  </li>
+  <li>
+    <p><strong>Análisis de subcontratación</strong>
+La app incorpora costes subcontratados y centros subcontratados por defecto, y añade un filtro de Subcontracting para incluir, excluir o aislar esos insights en los informes.</p>
+  </li>
+</ol>
+
+<h2 id="requisitos-y-configuración">Requisitos y configuración</h2>
+
+<p>La documentación de Microsoft indica varios requisitos explícitos para instalar las apps de Power BI de Business Central:</p>
+
+<ul>
+  <li>Un entorno de <strong>Business Central online</strong>.</li>
+  <li>Permisos y capacidad en <strong>Power BI</strong> para instalar apps de plantilla desde Marketplace y usar workspaces compartidos.</li>
+  <li>Licencias <strong>Power BI Pro</strong> para quien instala la app, quien refresca datos y quienes consumen informes; alternativamente, el uso de capacidad Premium/Fabric.</li>
+</ul>
+
+<p>Microsoft también aclara que cada app funcional se compone de dos piezas:</p>
+
+<ul>
+  <li>Una app conectora (AL), preinstalada en Business Central.</li>
+  <li>Una template app de Power BI que contiene el modelo semántico y los informes.</li>
+</ul>
+
+<p>En la configuración posterior, la guía asistida permite definir aspectos como el tipo de calendario, el desfase UTC, el rango de fechas, los días laborables y el mapeo de informes embebidos. Además, cada modelo semántico necesita parámetros de <strong>Environment</strong> y <strong>Company</strong> en Power BI, y Microsoft señala que el parámetro de empresa distingue mayúsculas y minúsculas.</p>
+
+<p>Otro punto relevante es el refresco. Los informes dependen de modelos semánticos que consumen APIs de Business Central, de modo que conviene revisar la política de refresh manual o programado. También se recomienda ejecutar periódicamente la cola de trabajo que actualiza dimension set entries para que dichas dimensiones aparezcan correctamente en las apps.</p>
+
+<h2 id="buenas-prácticas">Buenas prácticas</h2>
+
+<p>Además de lo que documenta Microsoft, hay una serie de recomendaciones prácticas que ayudan a sacar más partido a esta base:</p>
+
+<ul>
+  <li><strong>Mantener el modelo estándar como referencia principal</strong> y personalizar con criterio.</li>
+  <li><strong>Separar workspace de plantilla y workspace de explotación</strong> para conservar personalizaciones con más seguridad.</li>
+  <li><strong>Definir KPIs muy claros por rol</strong>: dirección, responsable de planta, responsable de producción y supervisión.</li>
+  <li><strong>Revisar la granularidad de fechas y filtros</strong> antes de extender informes.</li>
+  <li><strong>Acordar una gobernanza del dato</strong> para evitar que cada área redefina métricas a su manera.</li>
+  <li><strong>Probar el impacto del filtro de subcontratación</strong> cuando el modelo de trabajo industrial mezcla recursos internos y externos.</li>
+</ul>
+
+<h2 id="checklist-de-implantación">Checklist de implantación</h2>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Confirmar que la empresa trabaja con <strong>Business Central online</strong>.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Validar licencias <strong>Power BI Pro</strong> o capacidad Premium/Fabric.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Instalar la template app de Manufacturing en el workspace correcto.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Configurar parámetros de <strong>Environment</strong> y <strong>Company</strong>.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Revisar calendario, UTC offset, rango de fechas y días laborables.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Mapear informes embebidos en Business Central si se van a utilizar.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Definir estrategia de refresh de datos.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Revisar permisos de lectura para tablas implicadas.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Acordar criterios de gobierno del workspace y de las versiones personalizadas.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Priorizar un primer cuadro de mando por rol y un set de KPIs de arranque.</li>
+</ul>
+
+<h2 id="resumen-de-funcionalidades">Resumen de funcionalidades</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Funcionalidad</th>
+      <th>Beneficio</th>
+      <th>Impacto</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Esquema en estrella</td>
+      <td>Simplifica el análisis y ordena la lógica del modelo</td>
+      <td>Alto</td>
+    </tr>
+    <tr>
+      <td>Tablas de hechos de fabricación</td>
+      <td>Reúnen operaciones críticas de producción, capacidad y valor</td>
+      <td>Alto</td>
+    </tr>
+    <tr>
+      <td>Tablas de dimensión</td>
+      <td>Añaden contexto para segmentar y navegar por el dato</td>
+      <td>Alto</td>
+    </tr>
+    <tr>
+      <td>Informes orientados por rol</td>
+      <td>Facilitan el consumo por dirección, gestión y supervisión</td>
+      <td>Alto</td>
+    </tr>
+    <tr>
+      <td>Integración con Business Central y Power BI</td>
+      <td>Acelera el despliegue y la adopción</td>
+      <td>Muy alto</td>
+    </tr>
+    <tr>
+      <td>Configuración asistida</td>
+      <td>Ayuda a ajustar calendario, fechas y embedding</td>
+      <td>Medio</td>
+    </tr>
+    <tr>
+      <td>Filtro de subcontratación</td>
+      <td>Permite aislar o incluir costes y centros subcontratados</td>
+      <td>Medio-Alto</td>
+    </tr>
+    <tr>
+      <td>Gobierno por workspace</td>
+      <td>Reduce el riesgo de perder personalizaciones</td>
+      <td>Alto</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="conclusiones">Conclusiones</h2>
+
+<p>El modelo semántico de Power BI Manufacturing en Business Central destaca por algo muy importante: no intenta resolver la analítica industrial desde la improvisación. Microsoft aporta una base estructurada, documentada y conectada con casos de uso reales de producción.</p>
+
+<p>Para una empresa industrial, eso significa arrancar con una plataforma analítica más ordenada. Para un partner o consultor, significa menos tiempo dedicado a construir cimientos y más tiempo invertido en diseñar cuadros de mando útiles, gobernados y alineados con la operativa del cliente.</p>
+
+<p>La clave no está solo en instalar la app. La verdadera diferencia aparece cuando la organización convierte este modelo en su capa de referencia para hablar de capacidad, costes, utilización, rutas y órdenes de producción con el mismo lenguaje. Cuando eso sucede, el dato deja de ser un registro técnico y se convierte en una herramienta de decisión.</p>
+
+<h2 id="referencias">Referencias</h2>
+
+<p>Fuente original:</p>
+
+<ul>
+  <li><a href="https://github.com/MicrosoftDocs/dynamics365smb-docs/blob/main/business-central/manufacturing-powerbi-app-semantic-model.md">Documento en GitHub</a></li>
+  <li><a href="https://learn.microsoft.com/es-es/dynamics365/business-central/manufacturing-powerbi-app-semantic-model">Artículo en Microsoft Learn (español)</a></li>
+  <li><a href="https://learn.microsoft.com/en-us/dynamics365/business-central/across-powerbi-install-business-central-apps">Guía de instalación de apps de Power BI para Business Central</a></li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+  
+    
+
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Etiquetas: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#business-central" class="page__taxonomy-item p-category" rel="tag">business central</a><span class="sep">, </span>
+    
+      <a href="/tags/#business-intelligence" class="page__taxonomy-item p-category" rel="tag">business intelligence</a><span class="sep">, </span>
+    
+      <a href="/tags/#manufacturing" class="page__taxonomy-item p-category" rel="tag">manufacturing</a><span class="sep">, </span>
+    
+      <a href="/tags/#modelo-sem%C3%A1ntico" class="page__taxonomy-item p-category" rel="tag">modelo semántico</a><span class="sep">, </span>
+    
+      <a href="/tags/#power-bi" class="page__taxonomy-item p-category" rel="tag">power bi</a><span class="sep">, </span>
+    
+      <a href="/tags/#producci%C3%B3n" class="page__taxonomy-item p-category" rel="tag">producción</a><span class="sep">, </span>
+    
+      <a href="/tags/#reporting" class="page__taxonomy-item p-category" rel="tag">reporting</a>
+    
+    </span>
+  </p>
+
+
+  
+
+  
+    
+
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categorías: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#business-intelligence" class="page__taxonomy-item p-category" rel="tag">Business Intelligence</a><span class="sep">, </span>
+    
+      <a href="/categories/#dynamics-365" class="page__taxonomy-item p-category" rel="tag">Dynamics 365</a><span class="sep">, </span>
+    
+      <a href="/categories/#power-bi" class="page__taxonomy-item p-category" rel="tag">Power BI</a>
+    
+    </span>
+  </p>
+
+
+  
+
+
+        
+
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Actualizado:</strong> <time class="dt-published" datetime="2026-07-10T00:00:00+02:00">July 10, 2026</time></p>
+
+
+      </footer>
+
+      
+<section class="page__share">
+  <h4 class="page__share-title">Compartir en</h4>
+
+  <a href="https://x.com/intent/tweet?text=Power+BI+Manufacturing+en+Business+Central%3A+modelo+sem%C3%A1ntico+para+optimizar+la+producci%C3%B3n%20http%3A%2F%2Flocalhost%3A4000%2Fbusiness%2520intelligence%2Fdynamics%2520365%2Fpower%2520bi%2F2026%2F07%2F10%2Fpowerbi-manufacturing.html" class="btn btn--x" aria-label="Share on X" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir en X">
+    <i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i><span> X</span>
+  </a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fbusiness%2520intelligence%2Fdynamics%2520365%2Fpower%2520bi%2F2026%2F07%2F10%2Fpowerbi-manufacturing.html" class="btn btn--facebook" aria-label="Share on Facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir en Facebook">
+    <i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span>
+  </a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/business%20intelligence/dynamics%20365/power%20bi/2026/07/10/powerbi-manufacturing.html" class="btn btn--linkedin" aria-label="Share on LinkedIn" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir en LinkedIn">
+    <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span>
+  </a>
+
+  <a href="https://bsky.app/intent/compose?text=Power+BI+Manufacturing+en+Business+Central%3A+modelo+sem%C3%A1ntico+para+optimizar+la+producci%C3%B3n%20http%3A%2F%2Flocalhost%3A4000%2Fbusiness%2520intelligence%2Fdynamics%2520365%2Fpower%2520bi%2F2026%2F07%2F10%2Fpowerbi-manufacturing.html" class="btn btn--bluesky" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir en Bluesky">
+    <i class="fab fa-fw fa-bluesky" aria-hidden="true"></i><span> Bluesky</span>
+  </a>
+</section>
+
+
+      
+
+  <nav class="pagination" aria-label="Post pagination">
+    
+      <a href="/dynamics%20365/business%20central/inventario/2026/07/10/inventory-how-transfer-between-locations.html" class="pagination--pager" title="Cómo transferir inventario entre ubicaciones en Business Central">Anterior</a>
+    
+    
+      <a href="/dynamics%20365%20business%20central/fabricaci%C3%B3n/subcontrataci%C3%B3n/2026/07/10/subcontract-wip-transfers.html" class="pagination--pager" title="Transferencias WIP entre subcontratistas en Business Central: control real del producto semiterminado">Siguiente</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    
+
+<div class="page__related">
+  
+  <h2 class="page__related-title">Puede que también te interese</h2>
+  <div class="grid__wrapper">
+    
+      
+      
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/posts/sustainability-certificates/01-portada.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/dynamics%20365%20business%20central/sostenibilidad/esg/2026/07/10/sustainability-certificates.html" rel="permalink">Sustainability Certificates en Dynamics 365 Business Central
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          8 minuto(s) de lectura
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt p-summary" itemprop="description">Guía práctica para entender y comunicar cómo Dynamics 365 Business Central permite crear, clasificar y asignar certificados de sostenibilidad a proveedores y...</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/dynamics%20365%20business%20central/fabricaci%C3%B3n/subcontrataci%C3%B3n/2026/07/10/subcontract-wip-transfers.html" rel="permalink">Transferencias WIP entre subcontratistas en Business Central: control real del producto semiterminado
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          8 minuto(s) de lectura
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt p-summary" itemprop="description">En los entornos de fabricación en los que intervienen varios terceros, el producto semiterminado rara vez permanece estático. Puede salir del almacén propio,...</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/posts/inventory-how-transfer-between-locations/01-portada.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/dynamics%20365/business%20central/inventario/2026/07/10/inventory-how-transfer-between-locations.html" rel="permalink">Cómo transferir inventario entre ubicaciones en Business Central
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minuto(s) de lectura
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt p-summary" itemprop="description">Aprende a gestionar transferencias de inventario entre almacenes en Business Central mediante órdenes de transferencia y diarios de reclasificación.
+</p>
+  </article>
+</div>
+
+    
+  </div>
+</div>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Seguir:</strong></li>
+    
+
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-square-rss" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2026 <a href="http://localhost:4000">Marcelino Pacheco</a>. Funciona con <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
