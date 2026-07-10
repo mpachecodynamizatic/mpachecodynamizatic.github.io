@@ -5,10 +5,10 @@ categories: [Dynamics 365, Business Central, eCommerce]
 tags: [shopify, business central, sincronizacion, troubleshooting, ERP, integraciones, consultoria IT]
 excerpt: Aprende a detectar y resolver errores en la sincronizacion entre Shopify y Business Central con un enfoque profesional basado en buenas practicas de Microsoft
 header:
-  teaser: /assets/posts/shopify-troubleshoot-business-central/01-portada.png
+  teaser: /assets/posts/shopify-troubleshoot/01-portada.png
 ---
 
-![Portada](/assets/posts/shopify-troubleshoot-business-central/01-portada.png){: .align-center style="max-width: 700px;"}
+![Portada](/assets/posts/shopify-troubleshoot/01-portada.png){: .align-center style="max-width: 700px;"}
 
 # Cómo resolver errores de sincronización entre Shopify y Business Central de forma eficiente
 
