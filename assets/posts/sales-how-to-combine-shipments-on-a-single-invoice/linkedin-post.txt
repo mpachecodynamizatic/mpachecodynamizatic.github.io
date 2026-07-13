@@ -1,0 +1,33 @@
+📦 ¿Sigues emitiendo una factura por cada envío al mismo cliente?
+
+En Microsoft Dynamics 365 Business Central existe una funcionalidad estándar que permite agrupar varios envíos en una única factura, de forma manual o automática.
+
+¿Qué aporta?
+✅ Menos carga administrativa  
+✅ Mejor control del proceso de facturación  
+✅ Más orden documental  
+✅ Mejor experiencia para el cliente  
+✅ Más eficiencia cuando hay entregas parciales o expediciones recurrentes
+
+En el artículo explico:
+• Cuándo tiene sentido usar esta funcionalidad  
+• Qué requisitos debes cumplir  
+• Cómo funciona el proceso manual  
+• Qué ventajas ofrece la automatización por lotes  
+• Qué buenas prácticas conviene aplicar para implantarlo bien
+
+Una mejora pequeña sobre el papel… pero con mucho impacto en el día a día del ERP.
+
+Si trabajas con Business Central en ventas, administración, consultoría o implantación, te recomiendo tenerla en el radar.
+
+¿En tu organización ya consolidáis envíos en una sola factura o seguís facturando cada expedición por separado?
+
+#BusinessCentral
+#Dynamics365
+#ERP
+#Facturacion
+#Ventas
+#Automatizacion
+#MicrosoftDynamics365
+#Consultoria
+#TransformacionDigital
