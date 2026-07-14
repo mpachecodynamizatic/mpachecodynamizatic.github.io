@@ -1,5 +1,5 @@
 ---
-title: Agrupamiento de envíos en una factura única en Business Central: guía práctica para optimizar la facturación
+title: "Agrupamiento de envíos en una factura única en Business Central: guía práctica para optimizar la facturación"
 date: 2026-07-13
 categories: [Business Central, Ventas, Facturación, ERP]
 tags: [Business Central, Facturación, Ventas, Envíos, ERP, Automatización, Microsoft Dynamics 365, Consultoría]
