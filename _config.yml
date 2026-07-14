@@ -19,6 +19,7 @@ url: "https://mpachecodynamizatic.github.io"
 baseurl: ""
 locale: "es-ES"
 timezone: "Europe/Madrid"
+sticky_navigation: true
 
 # ==============================================
 #  AUTOR

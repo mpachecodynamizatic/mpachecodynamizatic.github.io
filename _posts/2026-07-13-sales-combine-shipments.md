@@ -9,12 +9,6 @@ header:
 ---
 ![Portada](/assets/posts/sales-combine-shipments/01-portada.png){: .align-center style="max-width: 700px;"}
 
-> **SEO title:** Agrupamiento de envíos en una factura única en Business Central: guía práctica para optimizar la facturación  
-> **Meta descripción:** Aprende cómo combinar varios envíos en una única factura en Microsoft Dynamics 365 Business Central, de forma manual o automática, para reducir tareas administrativas, mejorar el control y acelerar el proceso de cobro.  
-> **Slug:** sales-how-to-combine-shipments-on-a-single-invoice  
-> **ALT portada:** Portada corporativa sobre agrupamiento de varios envíos en una única factura en Microsoft Dynamics 365 Business Central.  
-> **ALT infografía:** Infografía vertical con el resumen ejecutivo del agrupamiento de envíos en una factura única en Business Central.
-
 # Agrupar varios envíos en una única factura en Business Central: menos fricción, más control y mejor experiencia de cliente
 
 ## Introducción

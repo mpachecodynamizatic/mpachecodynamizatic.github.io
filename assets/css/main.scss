@@ -31,3 +31,11 @@ search: false
 .page__footer .wrapper {
   max-width: 90vw !important;
 }
+
+/* Barra de navegación sticky */
+.masthead {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background-color: #fff;
+}
